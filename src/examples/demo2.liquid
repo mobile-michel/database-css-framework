@@ -1,0 +1,111 @@
+---
+pagination:
+  data: frameworks
+  size: 1
+  alias: html
+permalink: 'examples/demo2/{{ html.name | slug }}/index.html'
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ html.name }}</title>
+    <link rel="stylesheet" href="https://{{ html.cdn }}" />
+  </head>
+
+  <body style="background-color: rgb(235, 246, 255);">
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://{{html.url}}">Website</a>
+          </li>
+          <li>
+            <a href="https://{{html.demo}}">Demo</a>
+          </li>
+          <li>
+            <a href="https://{{html.doc}}">Doc</a>
+          </li>
+        </ul>
+        </nav>
+        <h1>{{ html.name }}</h1>
+        <p>{{ html.description }}</p>
+    </header>
+    <main>
+      <h2>Specifications</h2>
+      <ul>
+        <li>version {{html.version}} published on {{html.published | date: '%d %b %Y' }}</li>
+        <li>{{html.stars}} stars</strong> on <a href="https://github.com/{{html.github}}">GitHub</a> & a size of {{html.size}} Kb</li>
+        <li>{{html.type}} CSS framework {% if html.sass == 'true' %}, Sass preprocessor{% else %}, no preprocessor{% endif %}{% if html.semantic == 'true' %} & Html5 semantic elements{% else %} & no Html5 semantic elements{% endif %}</li>
+        {% if html.npm %}<li>can be installed with <code>npm install {{html.npm}}</code></li>{% endif %}
+      </ul>
+      <aside>
+        <h2>Aside</h2>
+        <p>This is an aside just after the main section.</p>
+        <nav>
+          <ul>
+            <li><a href="/">Link One</a></li>
+            <li><a href="/">Link Two</a></li>
+            <li><a href="/">Link Three</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam at neque ab aperiam laboriosam, veritatis molestias fuga qui non incidunt reiciendis quod praesentium. Vitae, in dolorem. Illum commodi veniam eos.</p>
+      <p>This is
+        <strong>strong</strong>, this is
+        <em>emphasis</em>
+        & some
+        <mark>marked text</mark>.</p>
+      <blockquote>This is a blockquote</blockquote>
+      <p>This is some
+        <code>code</code>, then
+        <kbd>Alt+F</kbd>
+        are keyboard commands</p>
+      <section>
+        <h2>Summary semantic element</h2>
+        <details>
+          <summary>This is the summary</summary>
+          <p>Some text explaining what it is</p>
+        </details>
+      </section>
+      <section>
+        <h2>Figure & figcaption</h2>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1473984951266-787b955c9e0b?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1470" alt="Cat">
+          <figcaption>Chat Calico on Focus Photo.</figcaption>
+        </figure>
+      </section>
+      <article>
+        <h2>Links & Buttons</h2>
+        <a href="/">I'm a hyperlink</a>
+        <a href="/">
+          <button>I'm a link with a button inside</button>
+        </a>
+        <a class="button" href="/">I'm a link with a class button</a>
+        <button>
+          <a href="/">I'm a button with link inside</a>
+        </button>
+      </article>
+      <article>
+        <header>This is article's header</header>
+        <p>Article's main paragraph with some code:</p>
+        <pre>
+<code>
+  body {
+    color: var(--text);
+    background: var(--bg);
+    font-size: 1.15rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+</code>
+</pre>
+        <footer>This is article's footer</footer>
+      </article>
+    </main>
+    <footer>
+      <small>&copy; 2023 footers</small>
+    </footer>
+  </body>
+</html>

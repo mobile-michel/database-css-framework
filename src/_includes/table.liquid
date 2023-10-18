@@ -1,0 +1,22 @@
+<table>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>GitHub</th>
+        <th>Version</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+{% for item in framework %}
+        <tr>
+            <td>{{ item.type }}</td>
+            <td><a href="https://{{ item.url }}">{{ item.name }}</a></td>
+            <td>{{ item.description }}</td>
+            <td><a href="https://github.com/{{ item.github }}">{{ item.stars }}</a></td>
+            <td>{{ item.version }}</td>
+            <td style="white-space: nowrap;">{{ item.published | date: "%d %b %Y" }}</td>
+        </tr>
+{% endfor %}
+</table>

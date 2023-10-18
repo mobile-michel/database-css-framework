@@ -1,0 +1,106 @@
+---
+pagination:
+  data: frameworks
+  size: 1
+  alias: framework
+permalink: 'semantic/demo2/{{ framework.name | slug }}/index.html'
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Test Page - {{ framework.name }}</title>
+  <link rel="stylesheet" href="https://{{ framework.cdn }}" />
+</head>
+
+<body id="top">
+  <header>
+    <h1>Semantic layout with <strong>{{ framework.name }}</strong> CSS framework</h1>
+    <p>This is a test page with nav inside header.</p>
+    <nav>
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#semantic">semantic layout</a></li>
+        <li><a href="#text">text elements</a></li>
+        <li><a href="#footer">footers</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="semantic">
+      <h3>Semantic layout</h3>
+      <code>
+        header<br>
+        >&nbsp;nav<br>
+        main<br>
+        >&nbsp;section<br>
+        >&nbsp;>&nbsp;header<br>
+        >&nbsp;>&nbsp;article<br>
+        >&nbsp;>&nbsp;>&nbsp;aside<br>
+        >&nbsp;>&nbsp;>&nbsp;header<br>
+        >&nbsp;>&nbsp;>&nbsp;p<br>
+        >&nbsp;>&nbsp;>&nbsp;footer<br>
+        footer<br>
+      </code>
+    </section>
+    <section id="text">
+      <header>
+        <h1>Text elements</h1>
+      </header>
+      <article>
+        <aside>
+          <h3>nav in aside in article</h3>
+          <nav>
+            <ul>
+              <li><a href="#">first link</a></li>
+              <li><a href="#">second link</a></li>
+              <li><a href="#">third link</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <header>
+          <h2>Paragraphs</h2>
+        </header>
+        <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+        <footer>
+          <p>Go to <a href="#top">top</a></p>
+        </footer>
+      </article>
+      <article>
+        <header>
+          <h2>Inline elements</h2>
+        </header>
+        <div>
+          <p><a href="#!">This is a text link</a>.</p>
+          <p><strong>Strong is used to indicate strong importance.</strong></p>
+          <p><em>This text has added emphasis.</em></p>
+          <p>The <b>b element</b> is stylistically different text from normal text, without any special importance.</p>
+          <p>The <i>i element</i> is text that is offset from the normal text.</p>
+          <p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.</p>
+          <p><del>This text is deleted</del> and <ins>This text is inserted</ins>.</p>
+          <p><s>This text has a strikethrough</s>.</p>
+          <p>Superscript<sup>®</sup>.</p>
+          <p>Subscript for things like H<sub>2</sub>O.</p>
+          <p><small>This small text is small for fine print, etc.</small></p>
+          <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+          <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q></p>
+          <p><cite>This is a citation.</cite></p>
+          <p>The <dfn>dfn element</dfn> indicates a definition.</p>
+          <p>The <mark>mark element</mark> indicates a highlight.</p>
+          <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
+          <p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
+        </div>
+        <footer>
+          <p>Go to <a href="#top">top</a></p>
+        </footer>
+      </article>
+    </section>
+  </main>
+  <footer id="footer">
+    <p>Made by <a href="http://twitter.com/cbracco">@cbracco</a>. Code on <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.</p>
+  </footer>
+</body>
+
+</html>

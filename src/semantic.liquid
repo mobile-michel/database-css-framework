@@ -1,0 +1,28 @@
+---
+title: Semantic
+description: Layout example with HTML5 semantic elements
+date: 2023-10-02
+layout: base
+tags: primary
+---
+{% assign list = frameworks | map: 'type' | uniq %}
+
+<h4>header > nav > li > h1 > p</h4>
+{% for item in list %}
+<p><strong>{{ item }}</strong>:
+  {% assign framework = frameworks | where: "type", item %}
+  {% for item in framework %}
+  <a href="/semantic/demo1/{{ item.name | slugify }}">{{ item.name }}</a> |
+  {% endfor %}
+</p>
+{% endfor %}
+
+<h4>header > h1 > p > nav > li</h4>
+{% for item in list %}
+<p><strong>{{ item }}</strong>:
+  {% assign framework = frameworks | where: "type", item %}
+  {% for item in framework %}
+  <a href="/semantic/demo2/{{ item.name | slugify }}">{{ item.name }}</a> |
+  {% endfor %}
+</p>
+{% endfor %}

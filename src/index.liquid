@@ -1,0 +1,14 @@
+---
+title: Home
+description: List of CSS frameworks
+date: 2023-10-03
+layout: base
+tags: primary
+---
+
+<h2>Filters</h2>
+<ul>
+    {% for item in collections.list %}
+    <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+    {% endfor %}
+</ul>

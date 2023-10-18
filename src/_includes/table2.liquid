@@ -1,0 +1,34 @@
+<table>
+    <thead>
+      <tr>
+        <th>framework</th>
+        <th>cdn</th>
+        <th>GitHub</th>
+        <th>version</th>
+        <th>size</th>
+        <th>last pub.</th>
+        <th>sass</th>
+        <th>semantic</th>
+        <th>themes</th>
+        <th>dark</th>
+        <th>variables</th>
+        <th>responsive</th>
+      </tr>
+    </thead>
+      {% for item in framework %}
+      <tr>
+        <td> <a href="/semantic/demo1/{{ item.name | slugify }}">{{ item.name }}</a></td>
+        <td><a href="https://{{item.cdn}}">cdn</a></td>
+        <td><a href="https://github.com/{{ item.github }}">{{ item.stars }}</a></td>
+        <td>{{ item.version }}</td>
+        <td style="white-space: nowrap;">{{ item.size }} Kb</td>
+        <td style="white-space: nowrap;">{{ item.published | date: "%d %b %Y" }}</td>
+        <td>{% if item.sass == 'true' %}<span style="background-color: rgb(197, 250, 197);">yes</span>{% else %}{{item.sass}}{% endif %}</td>
+        <td>{% if item.semantic == 'true' %}<span style="background-color: rgb(197, 250, 197);">yes</span>{% else %}{{item.semantic}}{% endif %}</td>
+        <td>{% if item.themes == 'true' %}<span style="background-color: rgb(197, 250, 197);">yes</span>{% else %}{{item.themes}}{% endif %}</td>
+        <td>{% if item.dark-mode == 'true' %}<span style="background-color: rgb(197, 250, 197);">yes</span>{% else %}{{item.dark-mode}}{% endif %}</td>
+        <td>{% if item.variables == 'true' %}<span style="background-color: rgb(197, 250, 197);">yes</span>{% else %}{{item.variables}}{% endif %}</td>
+        <td>{% if item.responsive == 'true' %}<span style="background-color: rgb(197, 250, 197);">yes</span>{% else %}{{item.responsive}}{% endif %}</td>
+      </tr>
+{% endfor %}
+</table>
