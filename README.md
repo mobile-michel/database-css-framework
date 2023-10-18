@@ -1,4 +1,4 @@
-# List of CSS frameworks in JSON file
+# Lists of CSS frameworks with examples
 
 - /index.liquid
   - /lists/name.liquid
