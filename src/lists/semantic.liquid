@@ -1,0 +1,13 @@
+---
+title: Only with semantic layout
+description: CSS frameworks with semantic layout
+layout: base
+tags: [list]
+---
+
+{% assign framework = frameworks | where: 'semantic', 'true' | sort: 'published' | reverse %}
+
+{% include 'table2' %}
+
+<p>Semantic layout are {{ "<header>, <main> & <footer>" | escape }}</p>
+<p>Nav is for {{ "<nav>, <ul> & <li>" | escape }}, usualy inside {{ "<header>" | escape }}</p>
