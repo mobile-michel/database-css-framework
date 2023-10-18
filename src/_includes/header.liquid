@@ -5,7 +5,7 @@
     <ul>
       {% for nav in collections.primary reversed %}
         <li {% if page.url == nav.url %}aria-current="page"{% endif %}>
-          <a href="{{ nav.url }}">{{ nav.data.title }}</a>
+          <a href="{{ nav.url }}">{{ nav.data.navTexte }}</a>
         </li>
       {% endfor %}
     </ul>
