@@ -18,10 +18,10 @@
     </thead>
       {% for item in framework %}
       <tr>
-        <td> <a href="/semantic/demo1/{{ item.name | slugify }}">{{ item.name }}</a></td>
+        <td><a href="/semantic/demo1/{{ item.name | slugify }}">{{ item.name }}</a></td>
         <td><a href="https://{{item.cdn}}">cdn</a></td>
         <td><a href="https://github.com/{{ item.github }}">{{ item.stars }}</a></td>
-        <td>{{ item.version }}</td>
+        <td><a href="https://{{item.url}}">{{ item.version }}</a></td>
         <td style="white-space: nowrap;">{{ item.size }} Kb</td>
         <td style="white-space: nowrap;">{{ item.published | date: "%d %b %Y" }}</td>
         <td>{% if item.sass == 'true' %}<span style="background-color: rgb(197, 250, 197);">yes</span>{% else %}{{item.sass}}{% endif %}</td>
