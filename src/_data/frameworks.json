@@ -316,7 +316,7 @@
         "demo": "missing.style/demos/",
         "npm": "-s missing.css",
         "cdn": "unpkg.com/missing.css@1.1.1",
-        "sass": "css sections",
+        "sass": "true",
         "semantic": "true",
         "primaryNav": "false",
         "themes": "false",
