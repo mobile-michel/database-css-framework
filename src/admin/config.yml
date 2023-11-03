@@ -48,3 +48,9 @@ collections: # Required. Accepts a list of collection objects
               - { label: "Responsive", name: "responsive", widget: "boolean" }
               - { label: "Components", name: "components", widget: "boolean" }
               - { name: "variables", widget: "boolean" }
+              - { name: "version" }
+              - { name: "doc" }
+              - { name: "dark-mode", widget: "boolean" }
+              - { name: "size" }
+              - { name: "description" }
+              - { name: "type" }
