@@ -9,13 +9,13 @@ collections: # Required. Accepts a list of collection objects
     folder: "src" # Required. The path to the folder where the documents are stored
     create: true # Important. Allow users to create new documents in this collection
     fields: # Required. The fields for each document, usually in front matter
-      - {name: "title"} # Required
-      - {name: "description"}
-      - {name: "date", widget: "datetime"}
-      - {name: "layout", widget: "hidden", default: "base"}
-      - {name: "tags"}
-      - {name: "navTexte"}
-      - {name: "body"} # Required
+      - {label: "Name", name: "title", widget: "string"} # Required
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "base"}
+      - {label: "Tags", name: "tags", widget: "string"}
+      - {label: "Texte navigation", name: "navTexte", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"} # Required
   - label: "Settings"
     name: "settings"
     editor:
