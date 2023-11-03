@@ -45,8 +45,7 @@ collections: # Required. Accepts a list of collection objects
               - { label: "NPM", name: "npm", widget: "string" }
               - { label: "CDN", name: "cdn", widget: "string" }
               - { label: "Sass", name: "sass", widget: "boolean" }
-              - { label: "Published", name: "published", widget: "string" }
               - { label: "URL", name: "url", widget: "string" }
               - { label: "Responsive", name: "responsive", widget: "boolean" }
-              - { label: "Components", name: "Components", widget: "boolean" }
+              - { label: "Components", name: "components", widget: "boolean" }
               - { name: "variables", widget: "boolean" }
