@@ -5,7 +5,7 @@ layout: base
 tags: [list]
 ---
 
-{% assign framework = frameworks | where: 'semantic', 'true' | sort: 'published' | reverse %}
+{% assign framework = frameworks.items | where: 'semantic', 'true' | sort: 'published' | reverse %}
 
 {% include 'table2' %}
 

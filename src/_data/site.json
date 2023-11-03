@@ -3,7 +3,7 @@
     "description": "Lists of CSS frameworks",
     "authorName": "Michel Maillard",
     "authorUrl": "https://michelmaillard.ch/",
-    "github": "https://github.com/mobile-michel/basic",
+    "github": "https://github.com/mobile-michel/database-css-frameworks",
     "favicon": "https://11ty.recipes/images/meta/favicon.svg",
     "css1": "https://cdn.jsdelivr.net/npm/@picocss/pico@next/css/pico.min.css",
     "css": "https://cdn.simplecss.org/simple.min.css",

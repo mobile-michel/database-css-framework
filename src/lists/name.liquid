@@ -5,13 +5,13 @@ layout: base
 tags: [list]
 ---
 
-{% assign list = frameworks | map: 'type' | uniq %}
+{% assign list = frameworks.items | map: 'type' | uniq %}
 
 {% for item in list %}
 
 <h2><strong>{{ item }}</strong></h2>
 
-{% assign framework = frameworks | where: "type", item | sort: 'name' | sort: 'type' %}
+{% assign framework = frameworks.items | where: "type", item | sort: 'name' | sort: 'type' %}
 
     {% include 'table2' %}
 

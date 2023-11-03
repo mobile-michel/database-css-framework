@@ -6,12 +6,12 @@ layout: base
 tags: primary
 navTexte: Examples
 ---
-{% assign list = frameworks | map: 'type' | uniq %}
+{% assign list = frameworks.items | map: 'type' | uniq %}
 
 <h4>Test Page</h4>
 {% for item in list %}
 <p><strong>{{ item }}</strong>:
-  {% assign framework = frameworks | where: "type", item %}
+  {% assign framework = frameworks.items | where: "type", item %}
   {% for item in framework %}
   <a href="/examples/demo1/{{ item.name | slugify }}">{{ item.name }}</a> |
   {% endfor %}
@@ -21,7 +21,7 @@ navTexte: Examples
 <h4>Semantic Layout</h4>
 {% for item in list %}
 <p><strong>{{ item }}</strong>:
-  {% assign framework = frameworks | where: "type", item %}
+  {% assign framework = frameworks.items | where: "type", item %}
   {% for item in framework %}
   <a href="/example/demo2/{{ item.name | slugify }}">{{ item.name }}</a> |
   {% endfor %}
@@ -31,7 +31,7 @@ navTexte: Examples
 <h4>Full Pico.css example</h4>
 {% for item in list %}
 <p><strong>{{ item }}</strong>:
-  {% assign framework = frameworks | where: "type", item %}
+  {% assign framework = frameworks.items | where: "type", item %}
   {% for item in framework %}
   <a href="/examples/demo3/{{ item.name | slugify }}">{{ item.name }}</a> |
   {% endfor %}
