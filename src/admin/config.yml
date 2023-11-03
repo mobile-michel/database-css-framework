@@ -37,7 +37,6 @@ collections: # Required. Accepts a list of collection objects
               - { label: "Version", name: "version", widget: "string" }
               - { label: "GitHub", name: "github", widget: "string" }
               - { label: "Stars", name: "stars", widget: "number" }
-              - { label: "Type", name: "type", widget: "string" }
               - { label: "Published", name: "published", widget: "string" }
               - { label: "Documentation", name: "doc", widget: "string" }
               - { label: "Demo", name: "demo", widget: "string" }
