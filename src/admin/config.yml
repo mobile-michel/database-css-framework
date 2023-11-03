@@ -25,7 +25,7 @@ collections: # Required. Accepts a list of collection objects
         name: "frameworks"
         file: "src/_data/frameworks.json"
         fields:
-          - label: "Name"
+          - label: "CSS Frameworks"
             name: "items"
             widget: "list"
             allow_add: true
