@@ -1,0 +1,24 @@
+<table>
+    <thead>
+      <tr>
+        <th>framework</th>
+        <th>category</th>
+        <th>cdn</th>
+        <th>GitHub</th>
+        <th>version</th>
+        <th>size</th>
+        <th>published</th>
+      </tr>
+    </thead>
+      {% for item in framework %}
+      <tr>
+        <td><a href="https://{{item.url}}">{{ item.name }}</a></td>
+        <td><a href="/semantic/demo1/{{ item.name | slugify }}">{{item.type}}</a></td>
+        <td><a href="https://{{item.cdn}}">cdn</a></td>
+        <td><a href="https://github.com/{{ item.github }}">{{ item.stars }}</a></td>
+        <td>{{ item.version }}</td>
+        <td style="white-space: nowrap;">{{ item.size }} Kb</td>
+        <td style="white-space: nowrap;">{{ item.published | date: "%d %b %Y" }}</td>
+      </tr>
+{% endfor %}
+</table>

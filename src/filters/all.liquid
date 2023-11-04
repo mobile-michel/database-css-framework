@@ -1,0 +1,14 @@
+---
+title: All frameworks
+description: A list of all CSS frameworks
+layout: base
+tags: [list]
+---
+
+
+{% assign items = semantic.items | sort: 'name' %}
+
+{% for item in items %}
+    {% include 'filters' %}
+{% endfor %}
+

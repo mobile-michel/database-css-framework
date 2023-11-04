@@ -1,0 +1,16 @@
+---
+title: Centered content
+description: Frameworks with centered content
+layout: base
+tags: [list]
+---
+
+
+{% assign items = semantic.items | sort: 'name' %}
+
+{% for item in items %}
+  {% if item.content == 'centered' %}
+    {% include 'filters' %}
+  {% endif %}
+{% endfor %}
+

@@ -1,0 +1,22 @@
+---
+title: Filters
+description: Frameworks filtered
+date: 2023-10-03
+layout: base
+tags: primary
+navTexte: Filters
+---
+
+<h2>Filters</h2>
+<ul>
+    {% for item in collections.list reversed %}
+    <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+    {% endfor %}
+</ul>
+
+<h3>Old filters</h3>
+<ul>
+    {% for item in collections.list2 reversed %}
+    <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,82 @@
+---
+pagination:
+  data: semantic.items
+  size: 1
+  alias: framework
+permalink: 'semantic/demo3/{{ framework.name | slug }}/index.html'
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Test Page - {{ framework.name }}</title>
+  <link rel="stylesheet" href="{{ framework.cdn }}" />
+</head>
+
+<body id="top">
+  <header>
+    <h1>Semantic layout with <strong>{{ framework.name }}</strong> CSS framework</h1>
+    <p>This is a test page with nav inside header.</p>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#semantic">semantic layout</a></li>
+        <li><a href="#text">text elements with dropdown</a>
+          <ul>
+            <li><a href="/">first dropdown</a></li>
+            <li><a href="/">second dropdown</a></li>
+          </ul>
+        </li>
+        <li><a href="#footer">footers</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <aside>
+      <h1>H1 in Aside</h1>
+      <p>BODY > MAIN > ASIDE > P.</p>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#semantic">semantic layout</a></li>
+          <li><a href="#text">text elements with dropdown</a></li>
+          <li><a href="#footer">footers</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <h1>H1 in Main</h1>
+    <p>BODY > MAIN > H1.</p>
+    <section>
+      <header>
+        <h1>H1 in Section</h1>
+        <p>BODY > MAIN > SECTION > HEADER > P.</p>
+      </header>
+      <p>BODY > MAIN > SECTION > P.</p>
+      <footer>
+        <p>BODY > MAIN > SECTION > FOOTER > P.</p>
+      </footer>
+    </section>
+    <article>
+      <aside>
+        <h1>H1 in Aside</h1>
+        <p>BODY > MAIN > SECTION > ASIDE > P.</p>
+      </aside>
+      <header>
+        <h1>H1 in Article</h1>
+        <p>BODY > MAIN > ARTICLE > HEADER > P.</p>
+      </header>
+      <p>BODY > MAIN > ARTICLE > P.</p>
+      <footer>
+        <p>BODY > MAIN > ARTICLE > FOOTER > P.</p>
+      </footer>
+      </section>
+    </article>
+  </main>
+  <footer id="footer">
+    <p>This is BODY > FOOTER</p>
+  </footer>
+</body>
+
+</html>

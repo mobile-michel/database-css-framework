@@ -1,0 +1,12 @@
+---
+title: by date
+description: Frameworks sorted by date
+date: 2023-11-05
+layout: base
+tags: [sort]
+---
+
+
+{% assign framework = frameworks.items | sort: 'published' | reverse %}
+
+    {% include 'sort' %}

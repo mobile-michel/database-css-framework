@@ -1,0 +1,12 @@
+---
+title: by name
+description: Frameworks sorted by name
+date: 2023-11-02
+layout: base
+tags: [sort]
+---
+
+
+{% assign framework = frameworks.items | sort: 'name' %}
+
+    {% include 'sort' %}

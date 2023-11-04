@@ -1,0 +1,15 @@
+---
+title: Sorted
+description: Frameworks sorted
+date: 2023-10-02
+layout: base
+tags: primary
+navTexte: Sorted
+---
+
+<h2>Sort</h2>
+<ul>
+    {% for item in collections.sort %}
+        <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+        {% endfor %}
+</ul>

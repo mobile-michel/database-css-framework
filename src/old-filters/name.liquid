@@ -2,7 +2,7 @@
 title: By name
 description: A list of CSS frameworks sorted by name
 layout: base
-tags: [list]
+tags: [list2]
 ---
 
 {% assign list = frameworks.items | map: 'type' | uniq %}
@@ -13,6 +13,6 @@ tags: [list]
 
 {% assign framework = frameworks.items | where: "type", item | sort: 'name' | sort: 'type' %}
 
-    {% include 'table2' %}
+    {% include 'table3' %}
 
 {% endfor %}

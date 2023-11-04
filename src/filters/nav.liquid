@@ -1,0 +1,16 @@
+---
+title: Navbar
+description: Frameworks with a navbar component
+layout: base
+tags: [list]
+---
+
+
+{% assign items = semantic.items | sort: 'name' %}
+
+{% for item in items %}
+  {% if item.nav %}
+  {% include 'filters' %}
+  {% endif %}
+{% endfor %}
+
