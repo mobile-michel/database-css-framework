@@ -1,0 +1,23 @@
+---
+title: Table
+description: Frameworks in table
+date: 2023-10-06
+layout: base
+tags: primary
+navTexte: Table
+---
+
+<table>
+    <th>
+        <td>Framework</td>
+        <td>Category</td>
+        <td>Sass</td>
+        <td>Semantic</td>
+    </th>
+    {% tablerow item in frameworks.items %}
+    {{item.name}}
+    {{item.category}}
+    {{item.sass}}
+    {{item.semantic}}
+    {% endtablerow %}
+</table>

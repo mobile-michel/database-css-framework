@@ -6,7 +6,7 @@ tags: [list]
 ---
 
 
-{% assign items = semantic.items | sort: 'name' %}
+{% assign items = frameworks.items | sort: 'name' %}
 
 {% for item in items %}
     {% include 'filters' %}

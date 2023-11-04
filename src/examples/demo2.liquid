@@ -1,6 +1,6 @@
 ---
 pagination:
-  data: frameworks
+  data: frameworks.items
   size: 1
   alias: html
 permalink: 'examples/demo2/{{ html.name | slug }}/index.html'
@@ -11,7 +11,7 @@ permalink: 'examples/demo2/{{ html.name | slug }}/index.html'
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ html.name }}</title>
-    <link rel="stylesheet" href="https://{{ html.cdn }}" />
+    <link rel="stylesheet" href="{{ html.cdn }}" />
   </head>
 
   <body style="background-color: rgb(235, 246, 255);">
