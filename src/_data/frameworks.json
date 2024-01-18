@@ -1091,6 +1091,34 @@
             "doc": "https://www.bonsaicss.com/docs/getting-started/installation/",
             "dark-mode": "",
             "description": "A Utility Complete CSS Framework for less than 45kb."
+        },
+        {
+            "name": "Silicon",
+            "category": "classlight",
+            "sass": "",
+            "semantic": "",
+            "content": "",
+            "nav": "",
+            "dropdown": "",
+            "aside": "",
+            "grid": "",
+            "size": 11,
+            "stars": 36,
+            "demo": "",
+            "github": "https://github.com/tygzy/silicon",
+            "layout": "",
+            "themes": "",
+            "npm": "bonsai.css",
+            "published": "2023-12-04",
+            "url": "https://silicon-css.com/",
+            "cdn": "",
+            "responsive": "",
+            "components": "",
+            "variables": "",
+            "version": "1.2.7",
+            "doc": "https://silicon-css.com/",
+            "dark-mode": "",
+            "description": "a classless, responsive CSS framework with a light and dark mode."
         }
     ]
 }
