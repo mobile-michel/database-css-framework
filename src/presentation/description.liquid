@@ -1,0 +1,10 @@
+---
+title: Basic Description
+description: Description of all the base of the database framework.
+layout: base
+---
+
+{% for i in frameworks.items %}
+    <p><strong>{{ i.name }}</strong>: {{ i.description }}<br>
+    {{ i.category }} - {{ i.size }}Kb - {{ i.stars }} stars on GitHub - last version: {{ i.version }} published on {{ i.version }}.</p>
+{% endfor %}

@@ -1,13 +1,12 @@
 ---
-title: CSS Frameworks
-description: List of CSS frameworks
-date: 2023-10-01
+title: Elements
+description: How Html elements get styled
+date: 2023-10-02
 layout: base
 tags: primary
-navTexte: Home
+navTexte: Elements
 ---
 
-<h2>Elements</h2>
 <ul>
     <li><a href="/semantic/demo3/classless">responsive navbar</a></li>
     <li><a href="/semantic/demo3/bahunya">fixed navbar</a></li>
@@ -15,7 +14,7 @@ navTexte: Home
     <li><a href="/semantic/demo3/picnic">responsive grid layout with classes</a></li>
     <li><a href="/semantic/demo3/simple">aside in main</a></li>
     <li><a href="/semantic/demo3/simple">aside in section</a></li>
-    <li><a href="/semantic/demo3/">links in aside in main</a></li>
+    <li><a href="/semantic/demo3/simple">links in aside in main</a></li>
     <li><a href="/semantic/demo3/simple">section & article</a></li>
     <li>typography</li>
     <li>table</li>
