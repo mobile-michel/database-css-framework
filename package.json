@@ -1,6 +1,6 @@
 {
   "name": "Database-CSS-Frameworks",
-  "version": "1.2",
+  "version": "2.0",
   "description": "List of CSS frameworks in JSON file",
   "main": "eleventy.config.js",
   "scripts": {
