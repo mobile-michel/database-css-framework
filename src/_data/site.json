@@ -7,6 +7,7 @@
     "favicon": "https://11ty.recipes/images/meta/favicon.svg",
     "css1": "https://cdn.jsdelivr.net/npm/@picocss/pico@next/css/pico.min.css",
     "css2": "https://cdn.simplecss.org/simple.min.css",
+    "css3": "https://classless.de/classless.css",
     "css": "https://cdn.jsdelivr.net/gh/kimeiga/bahunya/dist/bahunya.min.css",
     "backgroundImage": ""
 }

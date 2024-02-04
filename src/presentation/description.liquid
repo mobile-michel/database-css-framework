@@ -3,8 +3,27 @@ title: Basic Description
 description: Description of all the base of the database framework.
 layout: base
 ---
-
-{% for i in frameworks %}
-    <p><strong>{{ i.name }}</strong>: {{ i.description }}<br>
-    {{ i.category }} - {{ i.size }}Kb - {{ i.stars }} stars on GitHub - last version: {{ i.version }} published on {{ i.version }}.</p>
+<table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Category</th>
+        <th>Kb</th>
+        <th>Stars</th>
+        <th>Version</th>
+        <th>Published</th>
+      </tr>
+    </thead>
+{% for item in frameworks %}
+        <tr>
+            <td><a href="{{ item.url }}">{{ item.name }}</a></td>
+            <td>{{ item.description | truncate: 28 }}</td>
+            <td><a href="/semantic/demo5/{{ item.name | slugify }}">{{ item.category }}</a></td>
+            <td>{{ item.size }}</td>
+            <td><a href="{{ item.github }}">{{ item.stars }}</a></td>
+            <td>{{ item.version }}</td>
+            <td style="white-space: nowrap;">{{ item.published | date: "%d %b %Y" }}</td>
+        </tr>
 {% endfor %}
+</table>

@@ -3,7 +3,35 @@ title: Html Semantic Elements
 description: Description of the frameworks semantic elements.
 layout: base
 ---
-
-{% for i in frameworks %}
-    <p><strong>{{ i.name | capitalize }}</strong>: Header, Main, Footer, Article & Section: {{ i.semantic }} - main navbar styled: {{ i.nav }} - responsive navbar on cellphones: {{ i.responsive }}</p>
-{% endfor %}
+<table>
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>navbar</th>
+            <th>respon.</th>
+            <th>drop</th>
+            <th>content</th>
+            <th>aside</th>
+            <th>grid</th>
+            <th>layout</th>
+            <th>themes</th>
+            <th>compo.</th>
+        </tr>
+    </thead>
+    {% for item in frameworks %}
+    {% if item.semantic == 'true' %}
+    <tr>
+        <td><a href="{{ item.url }}" target="_blank">{{ item.name }}</a></td>
+        <td><a href="/semantic/demo5/{{ item.name | slugify }}">{{ item.nav }}</a></td>
+        <td>{{ item.responsive }}</td>
+        <td>{{ item.dropdown }}</td>
+        <td>{{ item.content }}</td>
+        <td>{{ item.aside }}</td>
+        <td>{{ item.grid }}</td>
+        <td>{{ item.layout }}</td>
+        <td>{{ item.themes }}</td>
+        <td>{{ item.components }}</td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+</table>

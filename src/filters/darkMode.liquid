@@ -1,0 +1,15 @@
+---
+title: Dark-mode
+description: Frameworks with dark-mode support
+layout: base
+tags: [list]
+---
+
+
+{% assign items = frameworks | sort: 'name' %}
+
+{% for item in items %}
+  {% if item.dark-mode == 'true' %}
+    {% include 'filters' %}
+  {% endif %}
+{% endfor %}

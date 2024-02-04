@@ -1,7 +1,6 @@
 <header>
+  <h1>{{ site.description }}</h1>
   <nav>
-    <ul>
-    </ul>
     <ul>
       {% for nav in collections.primary %}
         <li {% if page.url == nav.url %}aria-current="page"{% endif %}>

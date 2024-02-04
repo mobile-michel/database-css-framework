@@ -9,7 +9,7 @@ navTexte: JSON
 ## [Basic Description](/presentation/description/)
 - **name**
 - **description**
-- **category** (classless, classlight, heavyclass, allclass)
+- **category** (classless, classlight, heavyclass)
 - **size** (in Kb)
 - **stars** (GitHub stars)
 - **version**: last version

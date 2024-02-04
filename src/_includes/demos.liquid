@@ -1,0 +1,31 @@
+There are {{ frameworks.size }} frameworks in this list
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Demo 1</th>
+            <th>Demo 2</th>
+            <th>Demo 3</th>
+            <th>Demo 4</th>
+            <th>Demo 5</th>
+            <th>Demo 6</th>
+            <th>Demo 7</th>
+        </tr>
+    </thead>
+    {% for item in frameworks %}
+    {% if item.semantic %}
+    <tr>
+        <td><a href="{{ item.url }}" target="_blank">{{ item.name }}</a></td>
+        <td><a href="/semantic/demo1/{{ item.name | slugify }}">One</a></td>
+        <td><a href="/semantic/demo2/{{ item.name | slugify }}">Two</a></td>
+        <td><a href="/semantic/demo3/{{ item.name | slugify }}">Three</a></td>
+        <td><a href="/semantic/demo4/{{ item.name | slugify }}">Four</a></td>
+        <td><a href="/semantic/demo5/{{ item.name | slugify }}">Five</a></td>
+        <td><a href="/semantic/demo6/{{ item.name | slugify }}">Six</a></td>
+        <td><a href="/semantic/demo7/{{ item.name | slugify }}">Seven</a></td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+</table>
+<p>Demo 1: </p>

@@ -1,0 +1,17 @@
+---
+title: Demo 7
+layout: default
+pagination:
+  data: frameworks
+  size: 1
+  alias: framework
+permalink: 'semantic/demo7/{{ framework.name | slug }}/index.html'
+---
+{% include 'sections/header2' %}
+<main>
+  <h1>{{ title }}</h1>
+  {% include 'sections/aside1' %}
+  {% include 'sections/section1' %}
+  {% include 'sections/article1' %}
+</main>
+{% include 'sections/footer1' %}
