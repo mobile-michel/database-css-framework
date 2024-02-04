@@ -4,6 +4,6 @@ description: Description of the frameworks semantic elements.
 layout: base
 ---
 
-{% for i in frameworks.items %}
+{% for i in frameworks %}
     <p><strong>{{ i.name | capitalize }}</strong>: Header, Main, Footer, Article & Section: {{ i.semantic }} - main navbar styled: {{ i.nav }} - responsive navbar on cellphones: {{ i.responsive }}</p>
 {% endfor %}

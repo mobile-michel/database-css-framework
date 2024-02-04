@@ -7,6 +7,6 @@ tags: [sort]
 ---
 
 
-{% assign framework = frameworks.items | sort: 'published' | reverse %}
+{% assign framework = frameworks | sort: 'published' | reverse %}
 
     {% include 'sort' %}

@@ -6,12 +6,12 @@ layout: base
 tags: primary
 navTexte: Semantic
 ---
-{% assign list = frameworks.items | map: 'category' | uniq %}
+{% assign list = frameworks | map: 'category' | uniq %}
 
 <h4>header > nav > li > h1 > p</h4>
 {% for item in list %}
 <p><strong>{{ item }}</strong>:
-  {% assign framework = frameworks.items | where: "category", item %}
+  {% assign framework = frameworks | where: "category", item %}
   {% for item in framework %}
   <a href="/semantic/demo1/{{ item.name | slugify }}">{{ item.name }}</a> |
   {% endfor %}
@@ -21,9 +21,39 @@ navTexte: Semantic
 <h4>header > h1 > p > nav > li</h4>
 {% for item in list %}
 <p><strong>{{ item }}</strong>:
-  {% assign framework = frameworks.items | where: "category", item %}
+  {% assign framework = frameworks | where: "category", item %}
   {% for item in framework %}
   <a href="/semantic/demo2/{{ item.name | slugify }}">{{ item.name }}</a> |
+  {% endfor %}
+</p>
+{% endfor %}
+
+<h4>Demo 4</h4>
+{% for item in list %}
+<p><strong>{{ item }}</strong>:
+  {% assign framework = frameworks | where: "category", item %}
+  {% for item in framework %}
+  <a href="/semantic/demo4/{{ item.name | slugify }}">{{ item.name }}</a> |
+  {% endfor %}
+</p>
+{% endfor %}
+
+<h4>Demo 5</h4>
+{% for item in list %}
+<p><strong>{{ item }}</strong>:
+  {% assign framework = frameworks | where: "category", item %}
+  {% for item in framework %}
+  <a href="/semantic/demo5/{{ item.name | slugify }}">{{ item.name }}</a> |
+  {% endfor %}
+</p>
+{% endfor %}
+
+<h4>Demo 6</h4>
+{% for item in list %}
+<p><strong>{{ item }}</strong>:
+  {% assign framework = frameworks | where: "category", item %}
+  {% for item in framework %}
+  <a href="/semantic/demo6/{{ item.name | slugify }}">{{ item.name }}</a> |
   {% endfor %}
 </p>
 {% endfor %}

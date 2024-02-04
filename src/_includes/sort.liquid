@@ -1,3 +1,4 @@
+There are {{ frameworks.size }} frameworks in this list
 <table>
     <thead>
       <tr>
@@ -15,7 +16,7 @@
         <td><a href="{{item.url}}">{{ item.name }}</a></td>
         <td><a href="/semantic/demo1/{{ item.name | slugify }}">{{item.category}}</a></td>
         <td><a href="{{item.cdn}}">cdn</a></td>
-        <td><a href="{{ item.github }}">{{ item.stars }}</a></td>
+        <td><a href="{{ item.github }}">{{ item.stars | round }}k</a></td>
         <td>{{ item.version }}</td>
         <td style="white-space: nowrap;">{{ item.size }} Kb</td>
         <td style="white-space: nowrap;">{{ item.published | date: "%d %b %Y" }}</td>

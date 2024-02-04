@@ -1,0 +1,65 @@
+---
+pagination:
+  data: frameworks
+  size: 1
+  alias: framework
+permalink: 'semantic/demo6/{{ framework.name | slug }}/index.html'
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Test Page - {{ framework.name }}</title>
+  <link rel="stylesheet" href="{{ framework.cdn }}" />
+</head>
+
+<body>
+  <header>
+    <h1>Semantic layout with <strong>{{ framework.name }}</strong> CSS framework</h1>
+    <p>Semantic structure: Header (Nav), Main (Aside + Section + Article), Footer</p>
+    <nav>
+      <a href="/">Home</a>
+      <a href="structure">JSON</a>
+      <a href="elements">Elements</a>
+      <a href="sort">Sorted</a>
+    </nav>
+  </header>
+  <main>
+    <aside>
+      <h1>H1 in Aside</h1>
+      <p>This is some text paragraph.</p>
+        <ul>
+          <li><a href="/">First link</a></li>
+          <li><a href="#">Second link</a></li>
+          <li><a href="#">Third link</a></li>
+          <li><a href="#">Fourth link</a></li>
+        </ul>
+    </aside>
+    <h1>H1 in Main</h1>
+    <section>
+      <header>
+        <h2>Header in Section</h2>
+      </header>
+      <p>Some text paragraph in Article</p>
+      <footer>
+        <p>Footer in Section</p>
+      </footer>
+    </section>
+    <article>
+      <header>
+        <h2>Header in Article</h2>
+      </header>
+      <p>Some text paragraph in Article</p>
+      <footer>
+        <p>Footer in Article</p>
+      </footer>
+    </article>
+  </main>
+  <footer>
+    <p>The footer's page</p>
+  </footer>
+</body>
+
+</html>

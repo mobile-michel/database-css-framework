@@ -4,7 +4,7 @@ description: Description of the construction of the stylesheet.
 layout: base
 ---
 
-{% for i in frameworks.items %}
+{% for i in frameworks %}
     <p><strong>{{ i.name }}</strong>: Sass enabled: {{ i.sass }} - 
     variables: {{ i.variables }} - dark-mode: {{ i.dark-mode }}</p>
 {% endfor %}

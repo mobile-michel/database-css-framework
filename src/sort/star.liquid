@@ -7,6 +7,6 @@ tags: [sort]
 ---
 
 
-{% assign framework = frameworks.items | sort: 'stars' | reverse %}
+{% assign framework = frameworks | sort: 'stars' | reverse %}
 
     {% include 'sort' %}

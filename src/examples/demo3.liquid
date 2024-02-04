@@ -3,7 +3,7 @@ pagination:
   data: frameworks
   size: 1
   alias: html
-permalink: 'examples/demo2/{{ html.name | slug }}/index.html'
+permalink: 'examples/demo3/{{ html.name | slug }}/index.html'
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -19,13 +19,19 @@ permalink: 'examples/demo2/{{ html.name | slug }}/index.html'
       <nav>
         <ul>
           <li>
-            <a href="https://{{html.url}}">Website</a>
+            <a href="{{html.url}}">Website</a>
           </li>
           <li>
-            <a href="https://{{html.demo}}">Demo</a>
+            <a href="{{html.github}}">GitHub</a>
           </li>
           <li>
-            <a href="https://{{html.doc}}">Doc</a>
+            <a href="{{html.demo}}">Demo</a>
+          </li>
+          <li>
+            <a href="{{html.doc}}">Doc</a>
+          </li>
+          <li>
+            <a href="{{html.cdn}}">CDN</a>
           </li>
         </ul>
         </nav>
@@ -37,8 +43,7 @@ permalink: 'examples/demo2/{{ html.name | slug }}/index.html'
       <ul>
         <li>version {{html.version}} published on {{html.published | date: '%d %b %Y' }}</li>
         <li>{{html.stars}} stars</strong> on <a href="https://github.com/{{html.github}}">GitHub</a> & a size of {{html.size}} Kb</li>
-        <li>{{html.type}} CSS framework {% if html.sass == 'true' %}, Sass preprocessor{% else %}, no preprocessor{% endif %}{% if html.semantic == 'true' %} & Html5 semantic elements{% else %} & no Html5 semantic elements{% endif %}</li>
-        {% if html.npm %}<li>can be installed with <code>npm install {{html.npm}}</code></li>{% endif %}
+        <li><strong>{{html.category}}</strong> CSS framework, {{ html.sass }} preprocessor, {% if html.semantic == 'true' %} & Html5 semantic elements{% else %} & no Html5 semantic elements{% endif %}</li>
       </ul>
       <aside>
         <h2>Aside</h2>

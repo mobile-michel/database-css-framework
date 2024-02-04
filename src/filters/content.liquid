@@ -6,7 +6,7 @@ tags: [list]
 ---
 
 
-{% assign items = frameworks.items | sort: 'name' %}
+{% assign items = frameworks | sort: 'name' %}
 
 {% for item in items %}
   {% if item.content == 'centered' %}

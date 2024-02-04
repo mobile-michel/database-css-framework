@@ -8,6 +8,8 @@ navTexte: Home
 ---
 
 ## Pages
+
+This database includes {{frameworks.size}} CSS frameworks
 - [structure of the Json database](/structure)
 - [filtered](/filters)
 - [sorted](/sort)

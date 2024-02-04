@@ -6,12 +6,22 @@ layout: base
 tags: primary
 navTexte: Examples
 ---
-{% assign list = frameworks.items | map: 'category' | uniq %}
+{% assign list = frameworks | map: 'category' | uniq %}
+
+<h4>New version</h4>
+{% for item in list %}
+<p><strong>{{ item }}</strong>:
+  {% assign framework = frameworks | where: "category", item %}
+  {% for item in framework %}
+  <a href="/examples/demo3/{{ item.name | slugify }}">{{ item.name }}</a> |
+  {% endfor %}
+</p>
+{% endfor %}
 
 <h4>Test Page</h4>
 {% for item in list %}
 <p><strong>{{ item }}</strong>:
-  {% assign framework = frameworks.items | where: "category", item %}
+  {% assign framework = frameworks | where: "category", item %}
   {% for item in framework %}
   <a href="/examples/demo1/{{ item.name | slugify }}">{{ item.name }}</a> |
   {% endfor %}
@@ -21,19 +31,9 @@ navTexte: Examples
 <h4>Semantic Layout</h4>
 {% for item in list %}
 <p><strong>{{ item }}</strong>:
-  {% assign framework = frameworks.items | where: "category", item %}
+  {% assign framework = frameworks | where: "category", item %}
   {% for item in framework %}
   <a href="/examples/demo2/{{ item.name | slugify }}">{{ item.name }}</a> |
-  {% endfor %}
-</p>
-{% endfor %}
-
-<h4>Full Pico.css example</h4>
-{% for item in list %}
-<p><strong>{{ item }}</strong>:
-  {% assign framework = frameworks.items | where: "category", item %}
-  {% for item in framework %}
-  <a href="/examples/demo3/{{ item.name | slugify }}">{{ item.name }}</a> |
   {% endfor %}
 </p>
 {% endfor %}
