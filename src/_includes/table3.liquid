@@ -13,7 +13,7 @@
     </thead>
       {% for item in framework %}
       <tr>
-        <td><a href="/semantic/demo1/{{ item.name | slugify }}">{{ item.name }}</a></td>
+        <td><a href="/semantic/demo3/{{ item.name | slugify }}">{{ item.name }}</a></td>
         <td>{% if item.sass == 'true' %}<span style="background-color: rgb(197, 250, 197);color: black">yes</span>{% else %}{{item.sass}}{% endif %}</td>
         <td>{% if item.semantic == 'true' %}<span style="background-color: rgb(197, 250, 197);color: black">yes</span>{% else %}{{item.semantic}}{% endif %}</td>
         <td>{% if item.primaryNav == 'true' %}<span style="background-color: rgb(197, 250, 197);color: black">yes</span>{% else %}{{item.primaryNav}}{% endif %}</td>
