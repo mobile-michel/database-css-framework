@@ -1,15 +1,16 @@
 ---
-title: Dark-mode
-description: Frameworks with dark-mode support
+title: Heavy class
+description: CSS frameworks with lot's of classes and features
 layout: base
-tags: [list]
+tags: [category]
 ---
 
 
 {% assign items = frameworks | sort: 'name' %}
 
 {% for item in items %}
-  {% if item.dark-mode %}
+  {% if item.category == 'heavyclass' %}
     {% include 'filters' %}
   {% endif %}
 {% endfor %}
+

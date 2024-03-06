@@ -14,9 +14,9 @@ navTexte: Filters
     {% endfor %}
 </ul>
 
-<h3>Old filters</h3>
+<h2>Categories</h2>
 <ul>
-    {% for item in collections.list2 reversed %}
+    {% for item in collections.category reversed %}
     <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
     {% endfor %}
 </ul>

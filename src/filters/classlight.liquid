@@ -1,15 +1,16 @@
 ---
-title: Dark-mode
-description: Frameworks with dark-mode support
+title: Classlight
+description: Classlight frameworks
 layout: base
-tags: [list]
+tags: [category]
 ---
 
 
 {% assign items = frameworks | sort: 'name' %}
 
 {% for item in items %}
-  {% if item.dark-mode %}
+  {% if item.category == 'classlight' %}
     {% include 'filters' %}
   {% endif %}
 {% endfor %}
+

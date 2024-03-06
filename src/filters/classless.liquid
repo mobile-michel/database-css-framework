@@ -1,15 +1,16 @@
 ---
-title: Dark-mode
-description: Frameworks with dark-mode support
+title: Classless
+description: Classless frameworks
 layout: base
-tags: [list]
+tags: [category]
 ---
 
 
 {% assign items = frameworks | sort: 'name' %}
 
 {% for item in items %}
-  {% if item.dark-mode %}
+  {% if item.category == 'classless' %}
     {% include 'filters' %}
   {% endif %}
 {% endfor %}
+
