@@ -10,39 +10,51 @@ permalink: 'examples/demo4/{{ html.name | slug }}/index.html'
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ html.name }}</title>
-  <link rel="stylesheet" href="{{ html.cdn }}" />
+  <link rel="stylesheet" href="{{ html.cdn }}">
+  <link rel="stylesheet" href="/assets/css/colors.css">
 </head>
 
-<body style="background-color: rgb(247, 251, 255);">
-  <header style="border: 1px solid rgb(192, 192, 255)">
+<body>
+  <header>
     {% include 'sections/nav1' %}
     <h1>{{ html.name }}</h1>
     <p>{{ html.description }}</p>
   </header>
-  <main style="border: 1px solid rgb(192, 192, 255)">
-    <aside style="border: 1px dashed rgb(255, 192, 192)">
+  <main>
+    <aside>
       <header>
         <h3>This is an aside</h3>
       </header>
-      <ul>
-        <li><a href="{{ html.url | url }}">Website</a></li>
-        <li><a href="{{ html.github | url }}">Github</a></li>
-        <li><a href="{{ html.demo | url }}">Demo</a></li>
-        <li><a href="{{ html.doc | url }}">Doc</a></li>
-        <li><a href="{{ html.cdn | url }}">CDN</a></li>
-      </ul>
+      <nav aria-label="Secondary">
+        <ul>
+          <li><a href="{{ html.url | url }}">Website</a></li>
+          <li><a href="{{ html.github | url }}">Github</a></li>
+          <li><a href="{{ html.demo | url }}">Demo</a></li>
+          <li><a href="{{ html.doc | url }}">Doc</a></li>
+          <li><a href="{{ html.cdn | url }}">CDN</a></li>
+        </ul>
+      </nav>
     </aside>
-    <section aria-labelledby="{{ title | slugify }}" style="border: 1px dashed gray">
+    <section aria-labelledby="{{ title | slugify }}">
       <h2 id="{{ title | slugify }}">{{ title }}</h2>
       <p>This framework has {{ html.stars }} stars on Github.</p>
       <p>Version {{ html.version }} was published on {{ html.published | date: "%d %m %Y" }}.</p>
-      <p>Body has a light blue background color. Header, main & footer, a blue border. Aside, a dashed red border. Section, a dashed gray border.</p>
+      <h3>HTML elements color</h3>
+      <ul>
+        <li>body: light blue background</li>
+        <li>header & footer: light red background</li>
+        <li>main: light green background</li>
+        <li>aside: light yellow background</li>
+        <li>nav: blue dashed border</li>
+        <li>section: black dotted border</li>
+      </ul>
     </section>
   </main>
-  <footer style="border: 1px solid rgb(192, 192, 255)">
+  <footer>
+    {% include 'sections/nav2' %}
     <small>&copy; {{ "now" | date: "%Y" }} footer</small>
   </footer>
 </body>

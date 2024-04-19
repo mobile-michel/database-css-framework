@@ -1,0 +1,50 @@
+:root {
+    --spacing: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+}
+
+body>header, main, body>footer {
+    width: 100%;
+    max-width: 50rem;
+    margin-inline: auto;
+    padding: var(--spacing);
+}
+
+aside {
+    flex-grow: 1;
+    padding: var(--spacing);
+}
+
+section {
+    flex-grow: 4;
+    padding: var(--spacing);
+}
+
+[aria-label="Primary"] ul, [aria-label="Footer"] ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+[aria-label="Primary"] li, [aria-label="Footer"] li {
+    list-style-type: none;
+}
