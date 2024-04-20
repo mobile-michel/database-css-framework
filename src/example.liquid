@@ -18,6 +18,16 @@ navTexte: Examples
 </p>
 {% endfor %}
 
+<h4>Dropdown version</h4>
+{% for item in list %}
+<p><strong>{{ item }}</strong>:
+  {% assign framework = frameworks | where: "category", item %}
+  {% for item in framework %}
+  <a href="/examples/demo5/{{ item.name | slugify }}">{{ item.name }}</a> |
+  {% endfor %}
+</p>
+{% endfor %}
+
 <h4>Test Page</h4>
 {% for item in list %}
 <p><strong>{{ item }}</strong>:
