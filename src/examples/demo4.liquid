@@ -21,9 +21,23 @@ permalink: 'examples/demo4/{{ html.name | slug }}/index.html'
   <header>
     {% include 'sections/nav1' %}
     <h1>{{ html.name }}</h1>
-    <p>{{ html.description }}</p>
   </header>
   <main>
+    <section aria-labelledby="{{ title | slugify }}">
+      <h2 id="{{ title | slugify }}">{{ title }}</h2>
+      <p>{{ html.description }}</p>
+      <p>This framework has {{ html.stars }} stars on Github.</p>
+      <p>Version {{ html.version }} was published on {{ html.published | date: "%d %m %Y" }}.</p>
+      <h3>HTML elements color</h3>
+      <ul>
+        <li>body: light blue background</li>
+        <li>header & footer: light red background</li>
+        <li>main: light green background</li>
+        <li>aside: light yellow background</li>
+        <li>nav: blue dashed border</li>
+        <li>section: black dotted border</li>
+      </ul>
+    </section>
     <aside>
       <header>
         <h3>This is an aside</h3>
@@ -38,20 +52,6 @@ permalink: 'examples/demo4/{{ html.name | slug }}/index.html'
         </ul>
       </nav>
     </aside>
-    <section aria-labelledby="{{ title | slugify }}">
-      <h2 id="{{ title | slugify }}">{{ title }}</h2>
-      <p>This framework has {{ html.stars }} stars on Github.</p>
-      <p>Version {{ html.version }} was published on {{ html.published | date: "%d %m %Y" }}.</p>
-      <h3>HTML elements color</h3>
-      <ul>
-        <li>body: light blue background</li>
-        <li>header & footer: light red background</li>
-        <li>main: light green background</li>
-        <li>aside: light yellow background</li>
-        <li>nav: blue dashed border</li>
-        <li>section: black dotted border</li>
-      </ul>
-    </section>
   </main>
   <footer>
     {% include 'sections/nav2' %}

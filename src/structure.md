@@ -3,8 +3,6 @@ title: Json Structure
 description: Structure of the Json database file frameworks.json
 date: 2023-10-01
 layout: base
-tags: primary
-navTexte: JSON
 ---
 ## [Basic Description](/presentation/description/)
 - **name**

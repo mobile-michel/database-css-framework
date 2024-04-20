@@ -1,7 +1,7 @@
 ---
 title: Elements
 description: How Html elements get styled
-date: 2023-10-02
+date: 2023-10-07
 layout: base
 tags: primary
 navTexte: Elements

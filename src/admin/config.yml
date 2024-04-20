@@ -3,6 +3,7 @@ backend: # Required
   branch: main
 media_folder: "src/assets/images" # Required
 public_folder: "assets/images" # Required
+local_backend: true # Run "npx decap-server" for local backend | optional
 collections: # Required. Accepts a list of collection objects
   - name: "pages" # Required. Used in routes
     label: "Pages" # Required. Used in the UI
