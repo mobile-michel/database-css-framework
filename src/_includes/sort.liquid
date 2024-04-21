@@ -1,25 +1,25 @@
-There are {{ frameworks.size }} frameworks in this list
+There are {{ all.size }} frameworks in this list
 <table>
     <thead>
       <tr>
-        <th>framework</th>
-        <th>category</th>
-        <th>cdn</th>
-        <th>GitHub</th>
-        <th>version</th>
-        <th>size</th>
-        <th>published</th>
+        <th>framework<br>website</th>
+        <th>category<br>example</th>
+        <th>stars<br>Github</th>
+        <th>version<br>CDN</th>
+        <th>size<br>demo</th>
+        <th>published<br>doc</th>
+        <th>content</th>
       </tr>
     </thead>
       {% for item in framework %}
       <tr>
-        <td><a href="{{item.url}}">{{ item.name }}</a></td>
-        <td><a href="/examples/demo4/{{ item.name | slugify }}">{{item.category}}</a></td>
-        <td><a href="{{item.cdn}}">cdn</a></td>
-        <td><a href="{{ item.github }}">{{ item.stars | round }}k</a></td>
-        <td>{{ item.version }}</td>
-        <td style="white-space: nowrap;">{{ item.size }} Kb</td>
-        <td style="white-space: nowrap;">{{ item.published | date: "%d %b %Y" }}</td>
+        <td>{% if item.url %}<a href="{{item.url}}" target="_blank">{% endif %}{{ item.name }}</a></td>
+        <td><a href="/examples/demo4/{{item.name | slugify }}">{{item.category}}</a></td>
+        <td><a href="{{item.github}}" target="_blank">{{ item.stars | round }} k</a></td>
+        <td><a href="{{item.cdn}}" target="_blank">{{ item.version }}</a></td>
+        <td>{% if item.demo %}<a href="{{item.demo}}" target="_blank">{% endif %}{{ item.size }} Kb</a></td>
+        <td>{% if item.doc %}<a href="{{item.doc}}" target="_blank">{% endif %}{{ item.published | date: "%d %b %Y" }}</a></td>
+        <td>{{ item.content }}</td>
       </tr>
 {% endfor %}
 </table>

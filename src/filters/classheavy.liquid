@@ -1,5 +1,5 @@
 ---
-title: Heavy class
+title: Class-based
 description: CSS frameworks with lot's of classes and features
 layout: base
 tags: [category]
@@ -9,7 +9,7 @@ tags: [category]
 {% assign items = frameworks | sort: 'name' %}
 
 {% for item in items %}
-  {% if item.category == 'heavyclass' %}
+  {% if item.category == 'class-based' %}
     {% include 'filters' %}
   {% endif %}
 {% endfor %}

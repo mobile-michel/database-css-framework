@@ -28,7 +28,7 @@ permalink: 'examples/demo4/{{ html.name | slug }}/index.html'
         <h2 id="{{ title | slugify }}">{{ title }}</h2>
         <p>{{ html.description }}</p>
         <p>This framework has {{ html.stars }} stars on Github.</p>
-        <p>Version {{ html.version }} was published on {{ html.published | date: "%d %m %Y" }}.</p>
+        <p>Version {{ html.version }} was published on {{ html.published | date: "%d %b %Y" }}.</p>
         <h3>HTML elements color</h3>
         <ul>
           <li>body: light blue background</li>

@@ -1,0 +1,25 @@
+There are {{ all.size }} details in this list
+<table>
+    <thead>
+      <tr>
+        <th>framework</th>
+        <th>css</th>
+        <th>variables</th>
+        <th>dark-mode</th>
+        <th>semantic</th>
+        <th>nav</th>
+        <th>aside</th>
+      </tr>
+    </thead>
+      {% for item in items %}
+      <tr>
+        <td><a href="/examples/demo4/{{item.name | slugify }}">{{ item.name }}</a></td>
+        <td>{% if item.sass %}<mark>{{ item.sass }}</mark>{% endif %}</td>
+        <td>{% if item.variables %}<mark>variables</mark>{% endif %}</td>
+        <td>{% if item.dark-mode %}<mark>dark-mode</mark>{% endif %}</td>
+        <td>{% if item.semantic %}<mark>semantic</mark>{% endif %}</td>
+        <td>{% if item.dropdown %}<mark>dropdown</mark>{% endif %}</td>
+        <td>{% if item.aside %}<mark>aside</mark>{% endif %}</td>
+      </tr>
+{% endfor %}
+</table>

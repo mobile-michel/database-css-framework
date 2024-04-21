@@ -1,12 +1,12 @@
 ---
 title: by date
 description: Frameworks sorted by date
-date: 2023-11-03
+date: 2023-11-05
 layout: base
 tags: [sort]
 ---
 
 
-{% assign framework = frameworks | sort: 'published' | reverse %}
+{% assign framework = all | sort: 'published' | reverse %}
 
     {% include 'sort' %}

@@ -1,12 +1,12 @@
 ---
 title: by star
 description: Frameworks sorted by star
-date: 2023-11-04
+date: 2023-11-03
 layout: base
 tags: [sort]
 ---
 
 
-{% assign framework = frameworks | sort: 'stars' | reverse %}
+{% assign framework = all | sort: 'stars' | reverse %}
 
     {% include 'sort' %}
