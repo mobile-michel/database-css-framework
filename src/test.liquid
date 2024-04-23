@@ -1,0 +1,23 @@
+---
+title: Sorted
+description: Frameworks sorted
+date: 2023-10-02
+layout: base
+---
+{% assign framework = test | sort: 'name' %}
+<table>
+    <thead>
+      <tr>
+        <th>framework</th>
+        <th>category</th>
+        <th>demo</th>
+      </tr>
+    </thead>
+      {% for item in framework %}
+      <tr>
+        <td><a href="{{item.github}}" target="_blank">{{ item.name }}</a></td>
+        <td>{{ item.category }}</td>
+        <td><a href="{{item.demo}}" target="_blank">demo</a></td>
+      </tr>
+{% endfor %}
+</table>

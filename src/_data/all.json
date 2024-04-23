@@ -1,91 +1,6 @@
 [
     {
-        "name": "mobile-michel",
-        "description": "Ma version de la feuille de style CSS de base.",
-        "category": "classless",
-        "size": 0.7,
-        "stars": 0,
-        "version": "1.0",
-        "published": "2024-04-19",
-        "url": "https://michelmaillard.ch/",
-        "github": "https://github.com/mobile-michel/database-css-framework",
-        "cdn": "/assets/css/style.css",
-        "content": "centered"
-    },
-    {
-        "name": "almond",
-        "description": "Collection of CSS styles to make simple websites look nicer",
-        "category": "classless",
-        "size": 19.8,
-        "stars": 1.125,
-        "version": "1.2.2",
-        "published": "2023-02-09",
-        "url": "https://alvaromontoro.github.io/almond.css/",
-        "github": "https://alvaromontoro/almond.css",
-        "demo": "https://alvaromontoro.github.io/almond.css/demo",
-        "doc": "https://alvaromontoro/almond.css#almondcss",
-        "cdn": "https://unpkg.com/almond.css@latest/dist/almond.min.css",
-        "content": "centered"
-    },
-    {
-        "name": "awsm",
-        "description": "Simple CSS library for semantic HTML markup",
-        "category": "classless",
-        "size": 6.22,
-        "stars": 0.004,
-        "version": "1.2",
-        "published": "2016-04-03",
-        "github": "https://github.com/schollz/awsm.css",
-        "cdn": "https://unpkg.com/awsm.css/dist/awsm.min.css",
-        "content": "centered"
-    },
-    {
-        "name": "bahunya",
-        "description": "A classless CSS framework with a navbar and dark styling for around 10.46 kB.",
-        "category": "classless",
-        "size": 10.4,
-        "stars": 0.287,
-        "version": "no releases",
-        "published": "2022-06-16",
-        "url": "https://hakanalpay.com/bahunya/",
-        "github": "https://github.com/kimeiga/bahunya",
-        "demo": "https://hakanalpay.com/bahunya/demo.html",
-        "doc": "https://hakanalpay.com/bahunya/",
-        "cdn": "https://cdn.jsdelivr.net/gh/kimeiga/bahunya/dist/bahunya.min.css",
-        "content": "centered"
-    },
-    {
-        "name": "barecss",
-        "description": "BareCSS is a CSS only framework that styles frequently used HTML tags without the need for classes. It also provides a few utilities such as a responsive grid and CSS only tooltips.",
-        "category": "classless",
-        "size": 18.2,
-        "stars": 0.112,
-        "version": "1.1.0",
-        "published": "2016-03-05",
-        "url": "https://barecss.com/",
-        "github": "https://github.com/longsien/BareCSS",
-        "doc": "https://barecss.com/",
-        "cdn": "/assets/css/bare.css",
-        "content": "centered"
-    },
-    {
-        "name": "missing",
-        "description": "CSS library we wished already existed.",
-        "category": "classlight",
-        "size": 107.6,
-        "stars": 0.434,
-        "version": "1.1.1",
-        "published": "2023-09-04",
-        "url": "https://missing.style/",
-        "github": "https://github.com/bigskysoftware/missing",
-        "demo": "https://missing.style/demos/",
-        "doc": "https://missing.style/docs/",
-        "cdn": "https://unpkg.com/missing.css",
-        "content": "centered"
-    },
-    {
         "name": "bonsai",
-        "description": "A Utility Complete CSS Framework for less than 45kb.",
         "category": "class-based",
         "size": 46,
         "stars": 0.36,
@@ -95,13 +10,10 @@
         "github": "https://github.com/bonsaicss/bonsai.css",
         "demo": "https://www.bonsaicss.com/#learn-more",
         "doc": "https://www.bonsaicss.com/docs/getting-started/installation/",
-        "cdn": "https://unpkg.com/bonsai.css@latest/dist/bonsai.min.css",
-        "sass": "CSS imports",
-        "content": "left"
+        "cdn": "https://unpkg.com/bonsai.css@latest/dist/bonsai.min.css"
     },
     {
         "name": "bootstrap",
-        "description": "The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.",
         "category": "class-based",
         "size": 227,
         "stars": 167.326,
@@ -111,13 +23,10 @@
         "github": "https://github.com/twbs/bootstrap",
         "demo": "https://getbootstrap.com/docs/5.3/examples/",
         "doc": "https://getbootstrap.com/docs/",
-        "cdn": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css",
-        "sass": "SCSS",
-        "content": "left"
+        "cdn": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     },
     {
         "name": "bulma",
-        "description": "Modern CSS framework based on Flexbox.",
         "category": "class-based",
         "size": 632,
         "stars": 48.534,
@@ -127,13 +36,10 @@
         "github": "https://github.com/jgthms/bulma",
         "demo": "https://bulma.io/expo/",
         "doc": "https://bulma.io/documentation/",
-        "cdn": "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css",
-        "sass": "SCSS",
-        "content": "left"
+        "cdn": "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     },
     {
         "name": "chota",
-        "description": "Really small CSS framework.",
         "category": "class-based",
         "size": 17.9,
         "stars": 1.296,
@@ -143,42 +49,10 @@
         "github": "https://github.com/jenil/chota",
         "demo": "https://raw.githack.com/jenil/chota/master/test/index.html",
         "doc": "https://jenil.github.io/chota/#docs",
-        "cdn": "https://unpkg.com/chota@latest",
-        "content": "left"
-    },
-    {
-        "name": "classless",
-        "description": "Small CSS file, which defines few but great styles for basic HTML5 tags plus very few classes for grid, cards and spacing.",
-        "category": "classlight",
-        "size": 9.1,
-        "stars": 0.193,
-        "version": "1.0",
-        "published": "2022-03-18",
-        "url": "https://classless.de",
-        "github": "https://github.com/emareg/classlesscss",
-        "demo": "https://classless.de/#demo",
-        "doc": "https://classless.de/#basic",
-        "cdn": "https://classless.de/classless.css",
-        "content": "centered"
-    },
-    {
-        "name": "concrete",
-        "description": "A simple and to the point classless CSS framework.",
-        "category": "classless",
-        "size": 3,
-        "stars": 0.482,
-        "version": "3.0.0",
-        "published": "2024-04-12",
-        "url": "https://concrete.style/",
-        "github": "https://github.com/louismerlin/concrete.css",
-        "demo": "https://concrete.style/",
-        "doc": "https://concrete.style/",
-        "cdn": "https://unpkg.com/concrete.css",
-        "content": "centered"
+        "cdn": "https://unpkg.com/chota@latest"
     },
     {
         "name": "fomantic",
-        "description": "Build beautiful websites fast, with concise HTML, intuitive javascript, and simplified debugging.",
         "category": "class-based",
         "size": 1500,
         "stars": 3.426,
@@ -188,12 +62,10 @@
         "github": "https://github.com/fomantic/Fomantic-UI",
         "demo": "https://fomantic-ui.com/usage/layout.html",
         "doc": "https://fomantic-ui.com/introduction/getting-started.html",
-        "cdn": "https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.css",
-        "content": "left"
+        "cdn": "https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.css"
     },
     {
         "name": "foundation",
-        "description": "The most advanced responsive front-end framework in the world.",
         "category": "class-based",
         "size": 154.2,
         "stars": 29.58,
@@ -203,12 +75,10 @@
         "github": "https://github.com/foundation/foundation-sites",
         "demo": "https://get.foundation/templates.html",
         "doc": "https://get.foundation/sites/docs/",
-        "cdn": "https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css",
-        "content": "left"
+        "cdn": "https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css"
     },
     {
         "name": "fyldja",
-        "description": "Fylgja is a component based CSS framework, allowing you to pick only what you need, this will keep your build bundle small without using any tools.",
         "category": "class-based",
         "size": 162.9,
         "stars": 0.088,
@@ -218,42 +88,10 @@
         "github": "https://github.com/fylgja/fylgja",
         "demo": "https://fylgja.dev/components/",
         "doc": "https://fylgja.dev/getting-started/",
-        "cdn": "https://unpkg.com/fylgja/fylgja.css",
-        "content": "left"
-    },
-    {
-        "name": "gdcss",
-        "description": "A no-framework CSS library for vanilla rapid setup",
-        "category": "classless",
-        "size": 17.7,
-        "stars": 0.107,
-        "version": "no releases",
-        "published": "2021-08-14",
-        "url": "https://gdcss.netlify.app/",
-        "github": "https://github.com/hawkz/gdcss",
-        "demo": "",
-        "doc": "https://gdcss.netlify.app/docs.html",
-        "cdn": "https://hawkz.github.io/gdcss/gd.css",
-        "content": "centered"
-    },
-    {
-        "name": "holiday",
-        "description": "A minimalist classless CSS theme with dark mode support.",
-        "category": "classless",
-        "size": 19.3,
-        "stars": 0.126,
-        "version": "0.11.2",
-        "published": "2023-06-29",
-        "url": "https://holidaycss.js.org/",
-        "github": "https://github.com/EvgenyOrekhov/holiday.css",
-        "demo": "https://holidaycss.js.org/kitchen-sink/",
-        "doc": "https://holidaycss.js.org/usage/",
-        "cdn": "https://cdn.jsdelivr.net/npm/holiday.css@0.11.2",
-        "content": "centered"
+        "cdn": "https://unpkg.com/fylgja/fylgja.css"
     },
     {
         "name": "material",
-        "description": "Modular and customizable Material Design UI components for the web.",
         "category": "class-based",
         "size": 483.8,
         "stars": 17.035,
@@ -263,12 +101,10 @@
         "github": "https://github.com/material-components/material-components-web",
         "demo": "https://material.io/components?platform=web",
         "doc": "https://material.io/develop/web/getting-started",
-        "cdn": "https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css",
-        "content": "left"
+        "cdn": "https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
     },
     {
         "name": "miligram",
-        "description": "Minimalist CSS framework.",
         "category": "class-based",
         "size": 8.8,
         "stars": 10.134,
@@ -278,12 +114,10 @@
         "github": "https://github.com/milligram/milligram",
         "demo": "https://milligram.io/#examples",
         "doc": "https://milligram.io/#getting-started",
-        "cdn": "https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css",
-        "content": "left"
+        "cdn": "https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
     },
     {
         "name": "mustard",
-        "description": "A starter CSS framework that actually looks good.",
         "category": "classlight",
         "size": 24.1,
         "stars": 1.029,
@@ -293,57 +127,10 @@
         "github": "https://github.com/kylelogue/mustard-ui",
         "demo": "",
         "doc": "https://kylelogue.github.io/mustard-ui/docs/installation/",
-        "cdn": "https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css",
-        "content": "left"
-    },
-    {
-        "name": "mvp",
-        "description": "Minimalist stylesheet for HTML elements.",
-        "category": "classless",
-        "size": 9.46,
-        "stars": 4.857,
-        "version": "1.15",
-        "published": "2024-04-05",
-        "url": "https://andybrewer.github.io/mvp",
-        "github": "https://github.com/andybrewer/mvp/",
-        "demo": "https://andybrewer.github.io/mvp/mvp.html",
-        "doc": "https://andybrewer.github.io/mvp/#docs",
-        "cdn": "https://unpkg.com/mvp.css",
-        "content": "centered"
-    },
-    {
-        "name": "neat",
-        "description": "About Rapidly build efficient sites with Neat, the minimalist css framework.",
-        "category": "classless",
-        "size": 1.7,
-        "stars": 0.509,
-        "version": "1.0.15",
-        "published": "2024-01-19",
-        "url": "https://neat.joeldare.com/",
-        "github": "https://github.com/codazoda/neatcss",
-        "demo": "",
-        "doc": "https://neat.joeldare.com/",
-        "cdn": "/assets/css/neat.css",
-        "content": "centered"
-    },
-    {
-        "name": "new",
-        "description": "classless CSS framework to write modern websites using only HTML.",
-        "category": "classless",
-        "size": 4.8,
-        "stars": 3.789,
-        "version": "1.1.3",
-        "published": "2020-05-20",
-        "url": "https://newcss.net",
-        "github": "https://github.com/xz/new.css",
-        "demo": "https://newcss.net/demo",
-        "doc": "https://newcss.net/usage",
-        "cdn": "https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css",
-        "content": "centered"
+        "cdn": "https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css"
     },
     {
         "name": "picnic",
-        "description": "Lightweight and beautiful library.",
         "category": "class-based",
         "size": 38.6,
         "stars": 3.748,
@@ -353,27 +140,10 @@
         "github": "https://github.com/franciscop/picnic",
         "demo": "https://picnicss.com/tests",
         "doc": "https://picnicss.com/documentation",
-        "cdn": "https://cdn.jsdelivr.net/npm/picnic",
-        "content": "left"
-    },
-    {
-        "name": "pico-classless",
-        "description": "Elegant styles for all native HTML elements, dark mode automatically enabled.",
-        "category": "classless",
-        "size": 78.6,
-        "stars": 12.256,
-        "version": "2.0.6",
-        "published": "2024-03-03",
-        "url": "https://picocss.com",
-        "github": "https://github.com/picocss/pico",
-        "demo": "https://picocss.com/examples",
-        "doc": "https://picocss.com/docs/",
-        "cdn": "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css",
-        "content": "centered"
+        "cdn": "https://cdn.jsdelivr.net/npm/picnic"
     },
     {
         "name": "pico",
-        "description": "Elegant styles for all native HTML elements, dark mode automatically enabled.",
         "category": "classlight",
         "size": 92,
         "stars": 11.198,
@@ -383,12 +153,10 @@
         "github": "https://github.com/picocss/pico",
         "demo": "https://picocss.com/examples",
         "doc": "https://picocss.com/docs",
-        "cdn": "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css",
-        "content": "left"
+        "cdn": "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
     },
     {
         "name": "primer",
-        "description": "CSS framework that powers GitHub's front-end design.",
         "category": "class-based",
         "size": 809.1,
         "stars": 12.440,
@@ -398,12 +166,10 @@
         "url": "https://primer.style/css",
         "github": "https://github.com/primer/css",
         "doc": "https://primer.style/css/getting-started",
-        "cdn": "https://unpkg.com/@primer/css@^20.2.4/dist/primer.css",
-        "content": "left"
+        "cdn": "https://unpkg.com/@primer/css@^20.2.4/dist/primer.css"
     },
     {
         "name": "pure",
-        "description": "Set of small, responsive CSS modules that you can use in every web project.",
         "category": "class-based",
         "size": 15.4,
         "stars": 23.302,
@@ -413,27 +179,10 @@
         "github": "https://github.com/pure-css/pure",
         "demo": "https://purecss.io/layouts/",
         "doc": "https://purecss.io/start/",
-        "cdn": "https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css",
-        "content": "left"
-    },
-    {
-        "name": "sakura",
-        "description": "Minimal classless CSS framework/theme.",
-        "category": "classless",
-        "size": 3.2,
-        "stars": 3.946,
-        "version": "1.5.0",
-        "published": "2023-09-01",
-        "url": "https://oxal.org/projects/sakura",
-        "github": "https://github.com/oxalorg/sakura",
-        "demo": "https://oxal.org/projects/sakura/demo",
-        "doc": "https://oxalorg/sakura",
-        "cdn": "https://unpkg.com/sakura.css/css/sakura.css",
-        "content": "centered"
+        "cdn": "https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
     },
     {
         "name": "semantic-ui",
-        "description": "Development framework that helps create beautiful, responsive layouts using human-friendly HTML.",
         "category": "class-based",
         "size": 550.7,
         "stars": 50.919,
@@ -443,41 +192,10 @@
         "github": "https://github.com/Semantic-Org/Semantic-UI",
         "demo": "empty",
         "doc": "https://semantic-ui.com/introduction/getting-started.html",
-        "cdn": "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css",
-        "content": "left"
-    },
-    {
-        "name": "silicon",
-        "description": "a classless, responsive CSS framework with a light and dark mode.",
-        "category": "classlight",
-        "size": 11.3,
-        "stars": 0.036,
-        "version": "1.2.7",
-        "published": "2023-12-04",
-        "url": "https://silicon-css.com/",
-        "github": "https://github.com/tygzy/silicon",
-        "doc": "https://silicon-css.com/",
-        "cdn": "/assets/css/silicon.min.css",
-        "content": "centered"
-    },
-    {
-        "name": "simple",
-        "description": "A CSS framework that makes semantic HTML look good.",
-        "category": "classlight",
-        "size": 8.5,
-        "stars": 3.905,
-        "version": "2.3.0",
-        "published": "2024-03-06",
-        "url": "https://simplecss.org",
-        "github": "https://github.com/kevquirk/simple.css",
-        "demo": "https://simplecss.org/demo",
-        "doc": "https://kevquirk/simple.css/wiki/Getting-Started-With-Simple.css",
-        "cdn": "https://cdn.simplecss.org/simple.min.css",
-        "content": "centered"
+        "cdn": "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
     },
     {
         "name": "skelet",
-        "description": "Contemporary CSS framework which gives you the foundations to start building your next project right away.",
         "category": "class-based",
         "size": 102.4,
         "stars": 0.131,
@@ -486,12 +204,10 @@
         "url": "https://selekkt.dk/skelet/v3/",
         "github": "https://github.com/Selekkt/skelet",
         "doc": "https://selekkt.dk/skelet/v3/#start",
-        "cdn": "https://cdn.jsdelivr.net/npm/selekkt-skelet@latest/css/skelet.min.css",
-        "content": "left"
+        "cdn": "https://cdn.jsdelivr.net/npm/selekkt-skelet@latest/css/skelet.min.css"
     },
     {
         "name": "spectre",
-        "description": "A Lightweight, Responsive and Modern CSS Framework.",
         "category": "class-based",
         "size": 45.6,
         "stars": 11.276,
@@ -500,12 +216,10 @@
         "url": "https://picturepan2.github.io/spectre/",
         "github": "https://github.com/picturepan2/spectre",
         "doc": "https://picturepan2.github.io/spectre/getting-started/custom.html",
-        "cdn": "https://unpkg.com/spectre.css/dist/spectre.min.css",
-        "content": "left"
+        "cdn": "https://unpkg.com/spectre.css/dist/spectre.min.css"
     },
     {
         "name": "spruce",
-        "description": "An open-source, lightweight and modern CSS framework, design system built on Sass.",
         "category": "class-based",
         "size": 33.8,
         "stars": 0.201,
@@ -513,26 +227,10 @@
         "published": "2023-12-18",
         "url": "https://sprucecss.com/",
         "github": "https://github.com/conedevelopment/sprucecss",
-        "cdn": "https://cdn.jsdelivr.net/npm/sprucecss@2.2.2/css/spruce.css",
-        "content": "left"
-    },
-    {
-        "name": "tacit",
-        "description": "CSS framework for dummies, without classes.",
-        "category": "classless",
-        "size": 5.4,
-        "stars": 1.618,
-        "version": "1.7.1",
-        "published": "2024-01-15",
-        "url": "https://yegor256.github.io/tacit",
-        "github": "https://github.com/yegor256/tacit",
-        "demo": "https://yegor256.github.io/tacit/",
-        "cdn": "https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css",
-        "content": "centered"
+        "cdn": "https://cdn.jsdelivr.net/npm/sprucecss@2.2.2/css/spruce.css"
     },
     {
         "name": "tailwind",
-        "description": "A utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup.",
         "category": "class-based",
         "size": 1000,
         "stars": 75.851,
@@ -541,12 +239,10 @@
         "url": "https://tailwindcss.com/",
         "github": "https://github.com/tailwindlabs/tailwindcss",
         "demo": "https://tailwindui.com/components",
-        "doc": "https://tailwindcss.com/docs/installation",
-        "content": "left"
+        "doc": "https://tailwindcss.com/docs/installation"
     },
     {
         "name": "uikit",
-        "description": "Lightweight and modular front-end framework for developing fast and powerful web interfaces.",
         "category": "class-based",
         "size": 262,
         "stars": 18.097,
@@ -555,25 +251,10 @@
         "url": "https://getuikit.com/",
         "github": "https://github.com/uikit/uikit",
         "doc": "https://getuikit.com/docs/introduction",
-        "cdn": "https://cdn.jsdelivr.net/npm/uikit@3.16.1/dist/css/uikit.min.css",
-        "content": "left"
-    },
-    {
-        "name": "water",
-        "description": "Water.css is a drop-in collection of CSS styles to make simple websites like this just a little bit nicer.",
-        "category": "classless",
-        "size": 2.7,
-        "stars": 8.074,
-        "version": "2.1.1",
-        "published": "2021-08-11",
-        "url": "https://watercss.kognise.dev/",
-        "github": "https://github.com/kognise/water.css",
-        "cdn": "https://cdn.jsdelivr.net/npm/water.css@2/out/water.css",
-        "content": "centered"
+        "cdn": "https://cdn.jsdelivr.net/npm/uikit@3.16.1/dist/css/uikit.min.css"
     },
     {
         "name": "wing",
-        "description": "A beautiful CSS framework designed for minimalists.",
         "category": "class-based",
         "size": 4.8,
         "stars": 2.01,
@@ -583,12 +264,10 @@
         "github": "https://github.com/kbrsh/wing",
         "demo": "https://kbrsh.github.io/wing/#guide",
         "doc": "https://kbrsh.github.io/wing/#installation",
-        "cdn": "https://unpkg.com/wingcss",
-        "content": "left"
+        "cdn": "https://unpkg.com/wingcss"
     },
     {
         "name": "bolt",
-        "description": "Basic styles for HTML Elements. Providing a mostly-reasonable set of styles without classes.",
         "category": "class-based",
         "size": 7.8,
         "stars": 0.546,
@@ -596,12 +275,10 @@
         "published": "2024-04-04",
         "url": "https://boltcss.com/",
         "github": "https://github.com/tbolt/boltcss",
-        "cdn": "https://unpkg.com/boltcss/bolt.min.css",
-        "content": "left"
+        "cdn": "https://unpkg.com/boltcss/bolt.min.css"
     },
     {
         "name": "materialize",
-        "description": "A modern responsive front-end framework based on Material Design.",
         "category": "classlight",
         "size": 139,
         "stars": 38.854,
@@ -611,12 +288,10 @@
         "github": "https://github.com/Dogfalo/materialize",
         "demo": "https://materializecss.com/templates/starter-template/preview.html",
         "doc": "https://materializecss.com/getting-started.html",
-        "cdn": "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css",
-        "content": "left"
+        "cdn": "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     },
     {
         "name": "paper",
-        "description": "The less formal CSS framework",
         "category": "classlight",
         "size": 53.2,
         "stars": 4.003,
@@ -625,7 +300,6 @@
         "url": "https://www.getpapercss.com/",
         "github": "https://github.com/papercss/papercss",
         "demo": "https://materializecss.com/templates/starter-template/preview.html",
-        "cdn": "https://unpkg.com/papercss@1.9.2/dist/paper.min.css",
-        "content": "left"
+        "cdn": "https://unpkg.com/papercss@1.9.2/dist/paper.min.css"
     }
 ]

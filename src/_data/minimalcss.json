@@ -1,0 +1,31 @@
+[
+    {
+        "name": "almond",
+        "category": "classless",
+        "size": 19.8,
+        "stars": 1.125,
+        "version": "1.2.2",
+        "published": "2023-02-09",
+        "url": "https://alvaromontoro.github.io/almond.css/",
+        "github": "https://alvaromontoro/almond.css",
+        "demo": "https://alvaromontoro.github.io/almond.css/demo",
+        "doc": "https://alvaromontoro/almond.css#almondcss",
+        "cdn": "https://unpkg.com/almond.css@latest/dist/almond.min.css",
+        "css": "/assets/css/min/almond.min.css",
+        "sass": "SCSS",
+        "variables": true,
+        "dark-mode": false,
+        "header": false,
+        "nav": false,
+        "nav-dropdown": false,
+        "nav-responsive": false,
+        "main": false,
+        "aside": false,
+        "section": false,
+        "article": false,
+        "footer": true,
+        "grid": false,
+        "themes": false,
+        "components": true
+    }
+]
