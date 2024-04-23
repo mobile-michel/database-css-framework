@@ -1,18 +1,16 @@
 ---
-title: Json Structure
-description: Structure of the Json database file frameworks.json
+title: Pushed-left content
+description: Structure of the Json database file classlight.json
 date: 2023-10-01
 layout: base
 ---
 ## [Basic Description](/presentation/description/)
 - **name**
-- **description**
-- **category** (classless, classlight, heavyclass)
+- **category** (classless, classlight, class-based)
 - **size** (in Kb)
 - **stars** (GitHub stars)
-- **version**: last version
+- **version**: last version number
 - **published**: date of last version
-- **npm**: installation command
 
 ## [Links](/presentation/links/)
 - **url** (website)

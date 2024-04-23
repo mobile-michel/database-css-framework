@@ -6,10 +6,22 @@ layout: base
 tags: primary
 navTexte: Sorted
 ---
-
-<h2>Sort between {{frameworks.size}} CSS frameworks</h2>
+<h2>CSS frameworks with centered content</h2>
+<h3>Sort between {{details.size}} CSS frameworks</h3>
 <ul>
-    {% for item in collections.sort %}
+    {% for item in collections.classlight %}
         <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
         {% endfor %}
 </ul>
+
+<h2>CSS frameworks with pushed left content</h2>
+<h3>Sort between {{all.size}} CSS frameworks</h3>
+<ul>
+    {% for item in collections.classbased %}
+        <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+        {% endfor %}
+</ul>
+
+<h2>CSS frameworks to test</h2>
+<h3>{{test.size}} CSS frameworks</h3>
+<p><a href="/test">Test page</a></p>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drop-in Minimal CSS</title>
+  <style type="text/css">
+    body {
+      padding-left: 24px;
+    }
+
+    #switcher {
+      position: sticky;
+      top: 0;
+      padding-bottom: 9px;
+      background: white;
+      box-shadow: 0 2px 1px -1px #ccc;
+      z-index: 999999;
+    }
+  </style>
+  <script type="text/javascript">
+    function quick_api() {
+      var geturl = location.href;
+      if (/\?/.test(geturl) == true) {
+        css = /\?([a-z\-_0-9]+)/.exec(geturl)[1];
+        head = document.getElementsByTagName('head')[0];
+        link = document.createElement('link');
+        link.rel = "stylesheet";
+        link.type = "text/css";
+        link.href = "../assets/css/min/" + css + ".min.css";
+        head.appendChild(link);
+        window.id_store = css;
+      }
+    }
+    function update_switcher() {
+      css_id = window.id_store;
+      if (css_id) {
+        switcher = window.switcher_dropdown;
+        switcher.value = css_id;
+      }
+    }
+    quick_api();
+  </script>
+</head>
+
+<body onload="update_switcher()">
+{{ content }}
+  <script src="../assets/js/switcher.js" type="text/javascript"></script>
+</body>
+
+</html>
