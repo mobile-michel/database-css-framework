@@ -1,0 +1,47 @@
+<!-- based on https://github.com/alexandersandberg/html5-elements-tester -->
+<a href="#main">Skip to main content</a>
+
+<aside id="css-selection">
+    <div>
+        <label for="select-css">Select framework</label>
+        <select name="select-css" id="select-css">
+            <option value="">No CSS (browser defaults)</option>
+            <optgroup label="CSS Frameworks" id="select-css-frameworks">
+            </optgroup>
+        </select>
+        <div><em>% <a href="https://github.com/alexandersandberg/html5-elements-tester">HTML elements</a> styled</em>: <span id="total-coverage"></span></div>
+    </div>
+
+</aside>
+
+<header>
+    <h1>Classless CSS Framework explorer</h1>
+    <p>A test page for CSS frameworks showing examples and coverage info (what HTML elements are styled). <a href="https://www.skypack.dev/blog/2021/03/the-best-classless-css-frameworks-in-2021/">Read the post about classless frameworks at the Skypack Blog.</a></p>
+    <p>Forked from <a href="https://github.com/alexandersandberg/html5-elements-tester">HTML5 elements tester</a>. </p>
+
+    <div>
+        <h2>Use this framework in your own code:</h2>
+        <pre><code id="code-snippet-style">No framework selected</code></pre>
+    </div>
+</header>
+
+<main id="main">
+
+    <section id="coverage-table">
+        <h2>Coverage table</h2>
+        <table id="elements-table">
+
+        </table>
+
+    </section>
+</main>
+
+<aside id="aside">
+    <h2>About this project</h2>
+    <p>A test page containing most of the HTML5 elements that you'll ever need. Useful for testing CSS resets or CSS frameworks.</p>
+    <p>This section is inside an <code>&lt;aside&gt;</code> element.</p>
+</aside>
+
+<footer>
+    <p><a href="https://github.com/alexandersandberg/html5-elements-tester">HTML5 elements tester</a> by <a href="https://alexandersandberg.com">Alexander Sandberg</a> · <a href="#body">Back to top 👆</a></p>
+</footer>

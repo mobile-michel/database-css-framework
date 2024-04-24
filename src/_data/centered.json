@@ -1,0 +1,242 @@
+[
+    {
+        "name": "a11yana",
+        "landmarks": 43,
+        "landmarks-name": "header, nav, main",
+        "nav": "block"
+    },
+    {
+        "name": "almond",
+        "landmarks": 0,
+        "landmarks-name": "",
+        "nav": false
+    },
+    {
+        "name": "awsm",
+        "landmarks": 100,
+        "landmarks-name": "header, nav, main, aside, section, article, footer",
+        "nav": "flat"
+    },
+    {
+        "name": "axist",
+        "landmarks": 0,
+        "landmarks-name": "",
+        "nav": false
+    },
+    {
+        "name": "bahunya",
+        "landmarks": 100,
+        "landmarks-name": "header, nav, main, aside, section, article, footer",
+        "nav": "top fixed"
+    },
+    {
+        "name": "bamboo",
+        "landmarks": 14,
+        "landmarks-name": "main",
+        "nav": false
+    },
+    {
+        "name": "caramel",
+        "landmarks": 57,
+        "landmarks-name": "header, nav, main, footer",
+        "nav": "flat"
+    },
+    {
+        "name": "classless",
+        "landmarks": 100,
+        "landmarks-name": "header, nav, main, aside, section, article, footer",
+        "nav": "responsive top fixed"
+    },
+    {
+        "name": "clmaterial",
+        "landmarks": 29,
+        "landmarks-name": "section, footer",
+        "nav": false
+    },
+    {
+        "name": "concrete",
+        "landmarks": 57,
+        "landmarks-name": "header, main, section, footer",
+        "nav": false
+    },
+    {
+        "name": "gd",
+        "landmarks": 86,
+        "landmarks-name": "header, nav, main, section, article, footer",
+        "nav": "flat"
+    },
+    {
+        "name": "generic",
+        "landmarks": 43,
+        "landmarks-name": "header, nav, main",
+        "nav": "block"
+    },
+    {
+        "name": "github-markdown",
+        "landmarks": 0,
+        "landmarks-name": "",
+        "nav": false
+    },
+    {
+        "name": "holiday",
+        "landmarks": 57,
+        "landmarks-name": "header, nav, main, footer",
+        "nav": "flat"
+    },
+    {
+        "name": "latex",
+        "landmarks": 43,
+        "landmarks-name": "nav, main, article",
+        "nav": "block"
+    },
+    {
+        "name": "lissom",
+        "landmarks": 14,
+        "landmarks-name": "main",
+        "nav": false
+    },
+    {
+        "name": "magick",
+        "landmarks": 100,
+        "landmarks-name": "header, nav, main, aside, section, article, footer",
+        "nav": "flat"
+    },
+    {
+        "name": "marx",
+        "landmarks": 100,
+        "landmarks-name": "header, nav, main, aside, section, article, footer",
+        "nav": "block"
+    },
+    {
+        "name": "md-air",
+        "landmarks": 0,
+        "landmarks-name": "",
+        "nav": false
+    },
+    {
+        "name": "mercury",
+        "landmarks": 0,
+        "landmarks-name": "",
+        "nav": false
+    },
+    {
+        "name": "minimal-stylesheet",
+        "landmarks": 0,
+        "landmarks-name": "",
+        "nav": false
+    },
+    {
+        "name": "missing",
+        "landmarks": 71,
+        "landmarks-name": "header, main, aside, section, footer",
+        "nav": ".navbar class"
+    },
+    {
+        "name": "mu",
+        "landmarks": 0,
+        "landmarks-name": "",
+        "nav": false
+    },
+    {
+        "name": "mvp",
+        "landmarks": 100,
+        "landmarks-name": "header, nav, main, aside, section, article, footer",
+        "nav": "flat"
+    },
+    {
+        "name": "neat",
+        "landmarks": 0,
+        "landmarks-name": "",
+        "nav": false
+    },
+    {
+        "name": "new",
+        "landmarks": 14,
+        "landmarks-name": "header",
+        "nav": false
+    },
+    {
+        "name": "no-class",
+        "landmarks": 100,
+        "landmarks-name": "header, nav, main, aside, section, article, footer",
+        "nav": "flat"
+    },
+    {
+        "name": "ok",
+        "landmarks": 100,
+        "landmarks-name": "header, nav, main, aside, section, article, footer",
+        "nav": "flat"
+    },
+    {
+        "name": "pico",
+        "landmarks": 100,
+        "landmarks-name": "header, nav, main, aside, section, article, footer",
+        "nav": "flat"
+    },
+    {
+        "name": "sakura",
+        "landmarks": 0,
+        "landmarks-name": "",
+        "nav": false
+    },
+    {
+        "name": "silicon",
+        "landmarks": 43,
+        "landmarks-name": "nav, aside, footer",
+        "nav": "block"
+    },
+    {
+        "name": "simple",
+        "landmarks": 100,
+        "landmarks-name": "header, nav, main, aside, section, article, footer",
+        "header": "full with blue background",
+        "nav": "responsive buttons",
+        "main": "body display: grid",
+        "aside": "left with blue background",
+        "section": "bottom border",
+        "article": "card",
+        "footer": "centered with top border"
+    },
+    {
+        "name": "spcss",
+        "landmarks": 0,
+        "landmarks-name": "",
+        "nav": false
+    },
+    {
+        "name": "superstylin",
+        "landmarks": 0,
+        "landmarks-name": "",
+        "nav": false
+    },
+    {
+        "name": "tacit",
+        "landmarks": 86,
+        "landmarks-name": "header, nav, aside, section, article, footer",
+        "nav": "flat"
+    },
+    {
+        "name": "vanilla",
+        "landmarks": 14,
+        "landmarks-name": "header",
+        "nav": false
+    },
+    {
+        "name": "w3c-traditional",
+        "landmarks": 14,
+        "landmarks-name": "header",
+        "nav": false
+    },
+    {
+        "name": "water",
+        "landmarks": 14,
+        "landmarks-name": "footer",
+        "nav": false
+    },
+    {
+        "name": "writ",
+        "landmarks": 71,
+        "landmarks-name": "header, nav, main, aside, footer",
+        "nav": "flat"
+    }
+]

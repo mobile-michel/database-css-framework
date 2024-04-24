@@ -1,0 +1,15 @@
+<p>
+{% if collections.centered %}
+{% assign previousPost = collections.centered | getPreviousCollectionItem %}
+{% assign nextPost = collections.centered | getNextCollectionItem %}
+{% assign thisPost = collections.centered | getCollectionItem %}
+{% if nextPost or previousPost %}
+{% if previousPost %}{% if previousPost.data.fileslug == thisPost.data.fileslug %}
+Previous post {{thisPost.data.fileslug}}: <a role="button" href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a>
+{% endif %}{% endif %}
+{% if nextPost %}{% if nextPost.data.fileslug == thisPost.data.fileslug %}
+Next post: <a role="button" href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a>
+{% endif %}{% endif %}
+{% endif %}
+{% endif %}
+</p>

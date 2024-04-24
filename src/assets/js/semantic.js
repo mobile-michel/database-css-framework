@@ -17,83 +17,162 @@ const elements = [
 ];
 
 const cssFrameworks = [
-  
   {
-    name: "A11yana",
-    link: "/assets/css/min/a11yana.min.css"
-  },
-  {
-    name: "Almond",
-    link: "/assets/css/min/almond.min.css"
-  },
-  {
-    name: "Awsm",
-    link: "/assets/css/min/awsm-tasman.min.css"
-  },
-  {
-    name: "Axist",
-    link: "/assets/css/min/axist.min.css"
-  },
-  {
-    name: "Bahunya",
-    link: "/assets/css/min/bahunya.min.css"
-  },
-  {
-    name: "Bamboo",
-    link: "/assets/css/min/bamboo.min.css"
-  },
-  {
-    name: "Bare",
-    link: "/assets/css/min/bare.min.css"
-  },
-  {
-    name: "Caramel",
-    link: "/assets/css/min/caramel.min.css"
-  },
-  {
-    name: "Classless",
-    link: "/assets/css/min/classless.min.css"
-  },
-  {
-    name: "Clmaterial",
-    link: "/assets/css/min/clmaterial.min.css"
-  },
-  {
-    name: "Concrete",
-    link: "/assets/css/min/concrete.min.css"
-  },
-  {
-    name: "Gd",
-    link: "/assets/css/min/gd.min.css"
-  },
-  {
-    name: "New",
-    link: "/assets/css/min/new.min.css"
-  },
-  {
-    name: "MVP",
-    link: "/assets/css/min/mvp.min.css"
-  },
-  {
-    name: "Sakura",
-    link: "/assets/css/min/sakura.min.css"
-  },
-  {
-    name: "Holiday",
-    link: "/assets/css/min/holiday.min.css"
-  },
-  {
-    name: "Marx",
-    link: "/assets/css/min/marx.min.css"
-  },
-  {
-    name: "Simple",
-    link: "/assets/css/min/simple.min.css"
-  },
-  {
-    name: "Spcss",
-    link: "/assets/css/min/spcss.min.css"
-  }
+    "name": "a11yana",
+    "link": "/assets/css/a11yana.css"
+},
+{
+    "name": "almond",
+    "link": "/assets/css/almond.css"
+},
+{
+    "name": "awsm",
+    "link": "/assets/css/awsm.css"
+},
+{
+    "name": "axist",
+    "link": "/assets/css/axist.css"
+},
+{
+    "name": "bahunya",
+    "link": "/assets/css/bahunya.css"
+},
+{
+    "name": "bamboo",
+    "link": "/assets/css/bamboo.css"
+},
+{
+    "name": "caramel",
+    "link": "/assets/css/caramel.css"
+},
+{
+    "name": "classless",
+    "link": "/assets/css/classless.css"
+},
+{
+    "name": "clmaterial",
+    "link": "/assets/css/clmaterial.css"
+},
+{
+    "name": "concrete",
+    "link": "/assets/css/concrete.css"
+},
+{
+    "name": "gd",
+    "link": "/assets/css/gd.css"
+},
+{
+    "name": "generic",
+    "link": "/assets/css/generic.css"
+},
+{
+    "name": "github-markdown",
+    "link": "/assets/css/github-markdown.css"
+},
+{
+    "name": "holiday",
+    "link": "/assets/css/holiday.css"
+},
+{
+    "name": "latex",
+    "link": "/assets/css/latex.css"
+},
+{
+    "name": "lissom",
+    "link": "/assets/css/lissom.css"
+},
+{
+    "name": "magick",
+    "link": "/assets/css/magick.css"
+},
+{
+    "name": "marx",
+    "link": "/assets/css/marx.css"
+},
+{
+    "name": "md-air",
+    "link": "/assets/css/md-air.css"
+},
+{
+    "name": "mercury",
+    "link": "/assets/css/mercury.css"
+},
+{
+    "name": "minimal-stylesheet",
+    "link": "/assets/css/minimal-stylesheet.css"
+},
+{
+    "name": "missing",
+    "link": "/assets/css/missing.css"
+},
+{
+    "name": "mu",
+    "link": "/assets/css/mu.css"
+},
+{
+    "name": "mvp",
+    "link": "/assets/css/mvp.css"
+},
+{
+    "name": "neat",
+    "link": "/assets/css/neat.css"
+},
+{
+    "name": "new",
+    "link": "/assets/css/new.css"
+},
+{
+    "name": "no-class",
+    "link": "/assets/css/no-class.css"
+},
+{
+    "name": "ok",
+    "link": "/assets/css/ok.css"
+},
+{
+    "name": "pico",
+    "link": "/assets/css/pico.css"
+},
+{
+    "name": "sakura",
+    "link": "/assets/css/sakura.css"
+},
+{
+    "name": "silicon",
+    "link": "/assets/css/silicon.css"
+},
+{
+    "name": "simple",
+    "link": "/assets/css/simple.css"
+},
+{
+    "name": "spcss",
+    "link": "/assets/css/spcss.css"
+},
+{
+    "name": "superstylin",
+    "link": "/assets/css/superstylin.css"
+},
+{
+    "name": "tacit",
+    "link": "/assets/css/tacit.css"
+},
+{
+    "name": "vanilla",
+    "link": "/assets/css/vanilla.css"
+},
+{
+    "name": "w3c-traditional",
+    "link": "/assets/css/w3c-traditional.css"
+},
+{
+    "name": "water",
+    "link": "/assets/css/water.css"
+},
+{
+    "name": "writ",
+    "link": "/assets/css/writ.css"
+}
 ];
 
 const populateSelect = (list, target) => {

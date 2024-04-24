@@ -1,7 +1,7 @@
 ---
 title: Demo with ARIA Landmarks
 pagination:
-  data: frameworks
+  data: centered
   size: 1
   alias: html
 permalink: 'examples/demo4/{{ html.name | slug }}/index.html'
@@ -13,8 +13,8 @@ permalink: 'examples/demo4/{{ html.name | slug }}/index.html'
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ html.name }}</title>
-  <link rel="stylesheet" href="{{ html.cdn }}">
-  <link rel="stylesheet" href="/assets/css/colors.css">
+  <link rel="stylesheet" href="/assets/css/{{ html.name }}.css">
+  <link rel="stylesheet" href="/assets/css/ccolors.css">
 </head>
 
 <body>
@@ -23,37 +23,43 @@ permalink: 'examples/demo4/{{ html.name | slug }}/index.html'
     <h1>{{ html.name }}</h1>
   </header>
   <main>
-    <div aria-label="Content">
-      <section aria-labelledby="{{ title | slugify }}">
-        <h2 id="{{ title | slugify }}">{{ title }}</h2>
-        <p>{{ html.description }}</p>
-        <p>This framework has {{ html.stars }} stars on Github.</p>
-        <p>Version {{ html.version }} was published on {{ html.published | date: "%d %b %Y" }}.</p>
-        <h3>HTML elements color</h3>
-        <ul>
-          <li>body: light blue background</li>
-          <li>header & footer: light red background</li>
-          <li>main: light green background</li>
-          <li>aside: light yellow background</li>
-          <li>nav: blue dashed border</li>
-          <li>section: black dotted border</li>
-        </ul>
-      </section>
-    </div>
-    <aside>
-      <header>
-        <h3>This is an aside</h3>
-      </header>
-      <nav aria-label="Secondary">
-        <ul>
-          <li><a href="{{ html.url | url }}">Website</a></li>
-          <li><a href="{{ html.github | url }}">Github</a></li>
-          <li><a href="{{ html.demo | url }}">Demo</a></li>
-          <li><a href="{{ html.doc | url }}">Doc</a></li>
-          <li><a href="{{ html.cdn | url }}">CDN</a></li>
-        </ul>
-      </nav>
-    </aside>
+    <section aria-labelledby="{{ title | slugify }}">
+      <aside>
+        <header>
+          <h3>This is an aside</h3>
+        </header>
+        <nav aria-label="Secondary">
+          <ul>
+            <li><a href="{{ html.url | url }}">Website</a></li>
+            <li><a href="{{ html.github | url }}">Github</a></li>
+            <li><a href="{{ html.demo | url }}">Demo</a></li>
+            <li><a href="{{ html.doc | url }}">Doc</a></li>
+            <li><a href="{{ html.cdn | url }}">CDN</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <h2 id="{{ title | slugify }}">{{ title }}</h2>
+      <p>This is inside a <code>section</code> HTML element.</p>
+      <p>{{ html.description }}</p>
+      <p>This framework has {{ html.stars }} stars on Github.</p>
+      <p>Version {{ html.version }} was published on {{ html.published | date: "%d %b %Y" }}.</p>
+    </section>
+    <article>
+      <h3>HTML elements</h3>
+      <p>This is inside an <code>article</code> semantic HTML element</p>
+      <ul>
+        <li><strong>section elements</strong>: {{ html.landmarks }}%</li>
+        <li><strong>elements name</strong>: {{ html.landmarks-name }}</li>
+        <li><strong>stylesheet</strong>: <a href="/assets/css/{{ html.name }}.css" target="_blank">/assets/css/{{ html.name }}.css</a></li>
+        <li><strong>header</strong>: {{ html.header }}</li>
+        <li><strong>primary navigation</strong>: {{ html.nav }}</li>
+        <li><strong>main content</strong>: {{ html.main }}</li>
+        <li><strong>aside</strong>: {{ html.aside }}</li>
+        <li><strong>section</strong>: {{ html.section }}</li>
+        <li><strong>article</strong>: {{ html.article }}</li>
+        <li><strong>footer</strong>: {{ html.footer }}</li>
+      </ul>
+    </article>
   </main>
   <footer>
     {% include 'sections/nav2' %}

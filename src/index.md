@@ -8,13 +8,13 @@ navTexte: Home
 ---
 
 ## Databases
-- [centered content Json database](/classlight) with {{details.size}} CSS frameworks.
-- [pushed-left content Json database](/classbased) with {{all.size}} CSS frameworks.
+- [centered content](/classlight/name) with [{{details.size}} CSS frameworks](/classlight).
+- [pushed-left content](/classbased/name) with [{{all.size}} CSS frameworks](/classbased).
 - [Drop-in Minimal CSS](/dropin)
-- [HTML5 Elements Tester](/html5-elements-tester)
-- [Elements Tester](/elements-tester)
+- [HTML5 Elements Tester](/dropin/html5-elements-tester)
+- [Elements Tester](/dropin/elements-tester)
 
-## Other websites
+## Links with classless frameworks
 - [D. Bohdan list](https://github.com/dbohdan/classless-css)
 - [CSS Bed](https://www.cssbed.com/)
 - [Dohliam drop-in](https://dohliam.github.io/dropin-minimal-css/)
@@ -24,16 +24,3 @@ navTexte: Home
 - [CSS-Tricks](https://css-tricks.com/no-class-css-frameworks/)
 - [Skyoack Blog](https://www.skypack.dev/blog/2021/03/the-best-classless-css-frameworks-in-2021/)
 - [Dev - The best classless CSS frameworks in 2021](https://dev.to/skypack/the-best-classless-css-frameworks-in-2021-427a)
-
-## Some more classless frameworks
-- [magick.css](https://css.winterveil.net/)
-- [mini.css](https://minicss.us/)
-- [fly.css](https://flycss.vercel.app/)
-- [lissom.css](https://lissomware.github.io/css/)
-- [kraken](https://cferdinandi.github.io/kraken/)
-- [beer.css](https://www.beercss.com/)
-- [basic.css](https://vladocar.github.io/Basic.css/)
-- [style.css](https://ungoldman.com/style.css/)
-- [yorha](https://metakirby5.github.io/yorha/)
-- [tufte CSS](https://edwardtufte.github.io/tufte-css/)
-- [Marx](https://mblode.github.io/marx/)

@@ -1,0 +1,7 @@
+<p>
+{% assign previousPost = html | getPreviousCollectionItem %}
+{% assign nextPost = html | getNextCollectionItem %}
+{% assign thisPost = html | getCollectionItem %}
+Previous post {{thisPost.data.fileslug}}: <a role="button" href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a>
+Next post: <a role="button" href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a>
+</p>

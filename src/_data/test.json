@@ -160,5 +160,29 @@
         "category": "classlight",
         "github": "https://github.com/Chalarangelo/mini.css",
         "demo": "https://minicss.org/docs"
+    },
+    {
+        "name": "Fly.css",
+        "category": "",
+        "github": "",
+        "demo": "https://flycss.vercel.app/"
+    },
+    {
+        "name": "Lissom.css",
+        "category": "",
+        "github": "",
+        "demo": "https://lissomware.github.io/css/"
+    },
+    {
+        "name": "Kraken",
+        "category": "",
+        "github": "",
+        "demo": "https://cferdinandi.github.io/kraken/"
+    },
+    {
+        "name": "Beer.css",
+        "category": "",
+        "github": "",
+        "demo": "https://www.beercss.com/"
     }
 ]

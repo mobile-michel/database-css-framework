@@ -1,0 +1,12 @@
+---
+title: List of centered content frameworks
+date: 2023-10-04
+layout: base
+tags: primary
+navTexte: Centered
+---
+<h4>ARIA version with colors</h4>
+  {% for item in centered %}
+  <a href="/examples/demo6/{{ item.name | slugify }}">{{ item.name }}</a> |
+  {% endfor %}
+</p>
